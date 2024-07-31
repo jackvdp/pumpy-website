@@ -467,6 +467,7 @@ ol {
 .header-area .logo {
     display: inline-block;
     z-index: 16;
+    width: 150px;
 }
 
 .header-area .logo img {
@@ -978,10 +979,21 @@ ol {
 
 .footer-area .footer-content .logo {
     display: inline-block;
+    width: 150px;
 }
 
 .footer-area .footer-content .logo img {
     display: block;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dark-mode .logo img {
+    content: url('../images/logo-dark.svg'); /* Path to your dark mode logo */
 }
 
 .footer-area .footer-content .footer-menu {
