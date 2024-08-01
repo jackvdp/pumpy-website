@@ -993,7 +993,8 @@ ol {
 }
 
 .dark-mode .logo img {
-    content: url('../images/logo-dark.svg'); /* Path to your dark mode logo */
+    content: url('../images/logo-dark.svg');
+    /* Path to your dark mode logo */
 }
 
 .footer-area .footer-content .footer-menu {
@@ -1564,15 +1565,20 @@ ol {
     }
 }
 
+/* # Theme Toggle */
+
 .theme-toggle-box {
-    width: 80;
-    height: 80px;
+    width: 60px;
+    height: 120px;
     position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 1000;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: var(--box-background);
+    box-shadow: var(--box-shadow);
+    border: var(--box-border);
 }
 
 .theme-toggle-btn {
@@ -1585,63 +1591,78 @@ ol {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.theme-toggle-box .bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.toggle-icons {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    opacity: 0.1;
-    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
-.theme-toggle-box .toggle-icons {
-    position: relative;
-    font-size: 28px;
-    height: 28px;
-}
-
-.theme-toggle-box .infos {
-    text-align: center;
-}
-
-.theme-toggle-box .infos h4 {
-    font-size: 12px;
-    color: #BCBCBC;
-}
-
-.theme-toggle-box .infos h1 {
-    font-size: 16px;
-    color: #0F0F0F;
-    margin: 0;
-}
-
-.dark-mode .theme-toggle-box .infos h1 {
-    color: #FFFFFF;
+.icon-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .light-mode-icon,
 .dark-mode-icon {
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-wrapper::before {
+    content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--icon-background);
+    opacity: 0;
     transition: opacity 0.3s ease;
+}
+
+.light-mode-wrapper::before {
+    opacity: 1;
+}
+
+.light-mode-icon {
     color: var(--primary_color);
+    transform: scale(1.1);
 }
 
 .dark-mode-icon {
+    color: var(--secondary-text);
+}
+
+.dark-mode .light-mode-wrapper::before {
     opacity: 0;
+}
+
+.dark-mode .dark-mode-wrapper::before {
+    opacity: 1;
 }
 
 .dark-mode .light-mode-icon {
-    opacity: 0;
+    color: var(--secondary-text);
+    transform: scale(1);
 }
 
 .dark-mode .dark-mode-icon {
-    opacity: 1;
+    color: var(--primary_color);
+    transform: scale(1.1);
+}
+
+.theme-toggle-btn.toggling .toggle-icons {
+    animation: toggleShake 0.3s ease;
+}
+
+@keyframes toggleShake {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-2px); }
+    75% { transform: translateY(2px); }
 }

@@ -38,8 +38,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
     toggleButton.addEventListener('click', toggleDarkMode);
 });
 
+
 function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
+    const body = document.body;
+    const toggleBtn = document.getElementById('theme-toggle');
+    
+    body.classList.toggle('dark-mode');
+    
+    // Add animation class
+    toggleBtn.classList.add('toggling');
+    
+    // Remove animation class after transition completes
+    setTimeout(() => {
+        toggleBtn.classList.remove('toggling');
+    }, 300);
+
     // Save the user's preference
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
 }
