@@ -239,6 +239,10 @@ ol {
     z-index: 9;
 }
 
+.dark-mode .signature  {
+    content: url('../images/signature-dark.svg')
+}
+
 .info-box .bg-img,
 .about-area .about-me-box .bg-img,
 .about-area .about-image-box .bg-img,
