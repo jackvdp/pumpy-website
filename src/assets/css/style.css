@@ -363,6 +363,11 @@ ol {
     border: var(--box-border);
 }
 
+.dark-mode .info-box .inner-profile-icons a {
+    background: none;
+    color: #ffffff;
+}
+
 .info-box .inner-profile-icons a:hover {
     background: #ffffff;
     color: #0F0F0F;
