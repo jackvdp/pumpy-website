@@ -77,6 +77,8 @@ Table of contents
   --camarone: #20642b;
   --seal-brown: #0e0708;
   --Wasabi: #8ea63a;
+  --pink: #db2777;
+  --pumpyBlue: #93c5fd;
 }
 /* ===================================
     03. Reset
@@ -10454,6 +10456,16 @@ blockquote footer {
 }
 .btn.btn-transparent-white-light:hover, .btn.btn-transparent-white-light:active {
   background-color: var(--white);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--dark-gray);
+}
+.btn.btn-transparent-pink-light {
+  background-color: transparent;
+  border-color: var(--pink);
+  color: var(--pink);
+}
+.btn.btn-transparent-pink-light:hover, .btn.btn-transparent-white-light:active {
+  background-color: var(--pink);
   border-color: rgba(255, 255, 255, 0.3);
   color: var(--dark-gray);
 }

@@ -30,7 +30,7 @@ export default function Navbar() {
                     <div className="col-auto ms-auto d-none d-lg-flex">
                         <div className="header-icon">
                             <div className="header-button ms-25px">
-                                <div className="btn border-1 btn-transparent-white-light btn-large left-icon btn-switch-text">
+                                <div className="btn border-1 btn-transparent-pink-light btn-large left-icon btn-switch-text">
                                     <span>
                                         <span><i className="fa-regular fa-envelope"></i></span>
                                         <span className="btn-double-text" data-text="Let's talk!">Let's talk!</span>
