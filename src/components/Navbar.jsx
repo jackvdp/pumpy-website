@@ -1,4 +1,11 @@
 export default function Navbar() {
+    const navItems = [
+        { href: "/about", text: "About" },
+        { href: "/services", text: "Services" },
+        { href: "/casestudies", text: "Case Studies" },
+        { href: "/contact", text: "Contact" }
+    ];
+
     return (
         <header>
             <nav className="navbar navbar-expand-lg header-light bg-transparent header-transparent header-reverse-back-scroll glass-effect" data-header-hover="light">
@@ -20,10 +27,13 @@ export default function Navbar() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav alt-font">
-                                <li className="nav-item"><a href="/about" className="nav-link "><div className="nav-item-underline">About</div></a></li>
-                                <li className="nav-item"><a href="/services" className="nav-link"><div className="nav-item-underline">Services</div></a></li>
-                                <li className="nav-item"><a href="/casestudies" className="nav-link"><div className="nav-item-underline">Case Studies</div></a></li>
-                                <li className="nav-item"><a href="/contact" className="nav-link"><div className="nav-item-underline">Contact</div></a></li>
+                                {navItems.map((item, index) => (
+                                    <li className="nav-item" key={index}>
+                                        <a href={item.href} className="nav-link">
+                                            <div className="nav-item-underline">{item.text}</div>
+                                        </a>
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
