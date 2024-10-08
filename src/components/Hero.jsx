@@ -36,7 +36,7 @@ export default function Hero() {
                             </div>
                             <div data-anime='{ "effect": "slide", "color": "#f97316", "direction":"lr", "easing": "easeOutQuad", "delay":50}'>
                                 <div className="fancy-text-style-3 mt-30px">
-                                    <h4 className="lh-40 alt-font text-dark-gray fw-600 ls-minus-2px image-mask cover-background mb-0" style={{ backgroundImage: "url('imagesNew/hero/hero3.png')" }}>Building your digital presence together.</h4>
+                                    <h4 className="lh-40 alt-font text-dark-gray fw-600 ls-minus-2px image-mask cover-background mb-0" style={{ backgroundImage: "url('imagesNew/hero/hero4.png')" }}>Building your digital presence together.</h4>
                                 </div>
                             </div>
                         </div>
