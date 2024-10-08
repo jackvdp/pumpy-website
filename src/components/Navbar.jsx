@@ -4,7 +4,7 @@ export default function Navbar() {
             <nav className="navbar navbar-expand-lg header-light bg-transparent header-transparent header-reverse-back-scroll glass-effect" data-header-hover="light">
                 <div className="container-fluid">
                     <div className="col-auto">
-                        <a className="navbar-brand" href="demo-digital-agency.html">
+                        <a className="navbar-brand" href="/">
                             <img src="imagesNew/logo.png" alt="" className="default-logo" />
                             <img src="imagesNew/logo.png" alt="" className="alt-logo" />
                             <img src="imagesNew/logo.png" alt="" className="mobile-logo" />
