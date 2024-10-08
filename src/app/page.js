@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Logos from "@/components/Logos";
 import About from "@/components/About";
 import HowItWorks from "@/components/Process";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 export default function Home() {
   const scriptsLoadedRef = useRef(false);
@@ -467,11 +468,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
-      <div className="scroll-progress d-none d-xxl-block">
-        <a href="#" className="scroll-top" aria-label="scroll">
-          <span className="scroll-text">Scroll</span><span className="scroll-line"><span className="scroll-point"></span></span>
-        </a>
-      </div>
+      <ScrollIndicator />
     </div>
   );
 }

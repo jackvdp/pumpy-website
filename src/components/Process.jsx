@@ -37,7 +37,6 @@ function Steps() {
                         <div className="col-md-5 offset-md-1 d-flex align-items-center sm-mb-20px flex-wrap">
                             <i className={`${step.icon} text-base-color icon-large me-20px`}></i>
                             <span className="text-white fw-500 fs-30 alt-font me-15px">{step.title}</span>
-                            {step.popular && <span className="ps-15px pe-15px md-mt-10px md-mb-10px border-radius-100px text-uppercase bg-yellow text-dark-gray fs-12 lh-28 fw-700">Popular</span>}
                         </div>
                         <div className="col-md-5 last-paragraph-no-margin">
                             <p>{step.description}</p>
