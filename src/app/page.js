@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import { useEffect, useRef } from "react";
 import loadScript from "@/utils/loadScript";
 import Hero from "@/components/Hero";
+import Logos from "@/components/Logos";
 
 export default function Home() {
   const scriptsLoadedRef = useRef(false);
@@ -46,27 +47,7 @@ export default function Home() {
       </div>
       <Navbar />
       <Hero />
-      <section className="pb-0">
-        <div className="container">
-          <div className="row row-cols-1 row-cols-lg-5 row-cols-md-3 row-cols-sm-2 clients-style-06 justify-content-center" data-anime='{ "el": "childs", "translateY": [-15, 0], "scale": [1.1, 1], "opacity": [0,1], "duration": 500, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
-            <div className="col client-box text-center md-mb-40px">
-              <a href="#"><img src="images/logo-walmart-dark-gray.svg" className="h-35px" alt="" /></a>
-            </div>
-            <div className="col client-box text-center md-mb-40px">
-              <a href="#"><img src="images/logo-invision-dark-gray.svg" className="h-40px" alt="" /></a>
-            </div>
-            <div className="col client-box text-center md-mb-40px">
-              <a href="#"><img src="images/logo-netflix-dark-gray.svg" className="h-35px" alt="" /></a>
-            </div>
-            <div className="col client-box text-center sm-mb-40px">
-              <a href="#"><img src="images/logo-logitech-dark-gray.svg" className="h-35px" alt="" /></a>
-            </div>
-            <div className="col client-box text-center">
-              <a href="#"><img src="images/logo-amazon-dark-gray.svg" className="h-35px" alt="" /></a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Logos />
       <section className="overflow-hidden">
         <div className="container">
           <div className="row align-items-center mb-6 sm-mb-50px">
