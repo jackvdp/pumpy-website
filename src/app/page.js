@@ -6,6 +6,7 @@ import loadScript from "@/utils/loadScript";
 import Hero from "@/components/Hero";
 import Logos from "@/components/Logos";
 import About from "@/components/About";
+import HowItWorks from "@/components/Process";
 
 export default function Home() {
   const scriptsLoadedRef = useRef(false);
@@ -50,73 +51,7 @@ export default function Home() {
       <Hero />
       <Logos />
       <About />
-      <section className="bg-nero-gray big-section">
-        <div className="container">
-          <div className="row mb-7 sm-mb-50px">
-            <div className="col-12 col-xl-9 col-lg-12">
-              <h2 className="text-white fw-500 ls-minus-2px mb-0 alt-font" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "filter": ["blur(20px)", "blur(0px)"], "string": ["It&#39;s so challenging to find a good team to do great things. But we can provide you the best one."], "duration": 400, "delay": 0, "speed": 20, "easing": "easeOutQuad" }'></h2>
-            </div>
-          </div>
-          <div className="row mb-6 sm-mb-30px">
-            <div className="col-12" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-              <div className="row align-items-center pt-40px g-0 pb-40px border-top border-bottom border-color-dark-gray position-relative">
-                <div className="col-md-1 text-start text-md-center sm-mb-20px">
-                  <span className="fs-18 alt-font text-white">01</span>
-                </div>
-                <div className="col-md-5 offset-md-1 d-flex align-items-center sm-mb-20px">
-                  <i className="line-icon-Vector-5 text-base-color icon-large me-20px"></i>
-                  <span className="text-white fw-500 fs-30 alt-font">Design</span>
-                </div>
-                <div className="col-md-5 last-paragraph-no-margin">
-                  <p>We strive to develop real-world web solutions that are ideal for small to large projects with project requirements. </p>
-                </div>
-              </div>
-              <div className="row align-items-center pt-40px g-0 pb-40px border-bottom border-color-dark-gray position-relative">
-                <div className="col-md-1 text-start text-md-center sm-mb-20px">
-                  <span className="fs-18 alt-font text-white">02</span>
-                </div>
-                <div className="col-md-5 offset-md-1 d-flex align-items-center sm-mb-20px flex-wrap">
-                  <i className="line-icon-Laptop-Secure text-base-color icon-large me-20px"></i>
-                  <span className="text-white fw-500 fs-30 alt-font me-15px">Development</span>
-                  <span className="ps-15px pe-15px md-mt-10px md-mb-10px border-radius-100px text-uppercase bg-yellow text-dark-gray fs-12 lh-28 fw-700">Popular</span>
-                </div>
-                <div className="col-md-5 last-paragraph-no-margin">
-                  <p>We strive to develop real-world web solutions that are ideal for small to large projects with project requirements. </p>
-                </div>
-              </div>
-              <div className="row align-items-center pt-40px g-0 pb-40px border-bottom border-color-dark-gray position-relative">
-                <div className="col-md-1 text-start text-md-center sm-mb-20px">
-                  <span className="fs-18 alt-font text-white">03</span>
-                </div>
-                <div className="col-md-5 offset-md-1 d-flex align-items-center sm-mb-20px">
-                  <i className="line-icon-Archery-2 text-base-color icon-large me-20px"></i>
-                  <span className="text-white fw-500 fs-30 alt-font">Marketing</span>
-                </div>
-                <div className="col-md-5 last-paragraph-no-margin">
-                  <p>We strive to develop real-world web solutions that are ideal for small to large projects with project requirements. </p>
-                </div>
-              </div>
-              <div className="row align-items-center pt-40px g-0 pb-40px border-bottom border-color-dark-gray position-relative">
-                <div className="col-md-1 text-start text-md-center sm-mb-20px">
-                  <span className="fs-18 alt-font text-white">04</span>
-                </div>
-                <div className="col-md-5 offset-md-1 d-flex align-items-center sm-mb-20px">
-                  <i className="line-icon-Management text-base-color icon-large me-20px"></i>
-                  <span className="text-white fw-500 fs-30 alt-font">Content writing</span>
-                </div>
-                <div className="col-md-5 last-paragraph-no-margin">
-                  <p>We strive to develop real-world web solutions that are ideal for small to large projects with project requirements. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-12 col-md-10 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-              <div className="text-white fs-20">Save your precious time and effort spent for finding a solution. <a href="demo-digital-agency-contact.html" className="text-base-color text-decoration-line-bottom">Contact us now</a></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HowItWorks />
       <section className="pb-0 overflow-hidden position-relative">
         <div className="container">
           <div className="row align-items-center mb-5">
