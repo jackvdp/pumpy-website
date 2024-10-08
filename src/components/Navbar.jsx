@@ -1,7 +1,7 @@
 export default function Navbar() {
     return (
         <header>
-            <nav className="navbar navbar-expand-lg header-light bg-transparent disable-fixed">
+            <nav className="navbar navbar-expand-lg header-light bg-transparent header-transparent header-reverse-back-scroll glass-effect" data-header-hover="light">
                 <div className="container-fluid">
                     <div className="col-auto">
                         <a className="navbar-brand" href="demo-digital-agency.html">
