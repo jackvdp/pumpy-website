@@ -20,10 +20,10 @@ export default function Navbar() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav alt-font">
-                                <li className="nav-item"><a href="/about" className="nav-link">About</a></li>
-                                <li className="nav-item"><a href="/services" className="nav-link">Services</a></li>
-                                <li className="nav-item"><a href="/casestudies" className="nav-link">Case Studies</a></li>
-                                <li className="nav-item"><a href="/contact" className="nav-link">Contact</a></li>
+                                <li className="nav-item"><a href="/about" className="nav-link "><div className="nav-item-underline">About</div></a></li>
+                                <li className="nav-item"><a href="/services" className="nav-link"><div className="nav-item-underline">Services</div></a></li>
+                                <li className="nav-item"><a href="/casestudies" className="nav-link"><div className="nav-item-underline">Case Studies</div></a></li>
+                                <li className="nav-item"><a href="/contact" className="nav-link"><div className="nav-item-underline">Contact</div></a></li>
                             </ul>
                         </div>
                     </div>
