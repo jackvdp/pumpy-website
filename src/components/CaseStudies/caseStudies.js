@@ -11,7 +11,7 @@ const caseStudies = [
         id: 2,
         className: "mobile backend",
         link: "#",
-        imgSrc: "https://via.placeholder.com/1920x1200",
+        imgSrc: "/imagesNew/casestudies/met.png",
         title: "Met Office",
         subtitle: "Government"
     },
@@ -67,7 +67,7 @@ const caseStudies = [
         id: 9,
         className: "backend",
         link: "https://www.gov.uk/government/organisations/department-for-business-and-trade",
-        imgSrc: "imagesNew/casestudies/dbt.webp",
+        imgSrc: "imagesNew/casestudies/dbt.png",
         title: "Department of Business & Trade",
         subtitle: "Government"
     }

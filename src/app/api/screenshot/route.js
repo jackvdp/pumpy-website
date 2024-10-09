@@ -4,7 +4,7 @@ import puppeteer from 'puppeteer';
 import path from 'path';
 import fs from 'fs/promises';
 
-export async function GET(request: NextRequest) {
+export async function GET(request) {
     const url = request.nextUrl.searchParams.get('url');
     const delayParam = request.nextUrl.searchParams.get('delay')
     const delayDuration = Number(delayParam ? delayParam : 0)
@@ -33,7 +33,7 @@ export async function GET(request: NextRequest) {
     });
 }
 
-function delay(time: number) {
+function delay(time) {
     return new Promise(function(resolve) { 
         setTimeout(resolve, time)
     });
