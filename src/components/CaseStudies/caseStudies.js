@@ -3,7 +3,7 @@ const caseStudies = [
         id: 1,
         className: "web",
         link: "https://patchconsultancy.co.uk",
-        imgSrc: "https://via.placeholder.com/750x905",
+        imgSrc: "/imagesNew/casestudies/patch.png",
         title: "Patch",
         subtitle: "Hospitality Consultancy"
     },
@@ -11,7 +11,7 @@ const caseStudies = [
         id: 2,
         className: "mobile backend",
         link: "#",
-        imgSrc: "https://via.placeholder.com/750x905",
+        imgSrc: "https://via.placeholder.com/1920x1200",
         title: "Met Office",
         subtitle: "Government"
     },
@@ -19,7 +19,7 @@ const caseStudies = [
         id: 3,
         className: "web",
         link: "https://gigabyte.software",
-        imgSrc: "https://via.placeholder.com/750x905",
+        imgSrc: "/imagesNew/casestudies/gigabyte.png",
         title: "Gigabyte Software",
         subtitle: "Property Tech"
     },
@@ -27,7 +27,7 @@ const caseStudies = [
         id: 4,
         className: "mobile",
         link: "https://vanderpump.tech/music",
-        imgSrc: "https://via.placeholder.com/750x905",
+        imgSrc: "/imagesNew/casestudies/pumpymusic.png",
         title: "Pumpy Music",
         subtitle: "Music Tech"
     },
@@ -35,7 +35,7 @@ const caseStudies = [
         id: 5,
         className: "web backend",
         link: "https://electoralnetwork.org",
-        imgSrc: "https://via.placeholder.com/750x905",
+        imgSrc: "imagesNew/casestudies/electoral.png",
         title: "Electoral Network",
         subtitle: "Government"
     },
@@ -43,7 +43,7 @@ const caseStudies = [
         id: 6,
         className: "web",
         link: "https://elev8exchange.com",
-        imgSrc: "https://via.placeholder.com/750x905",
+        imgSrc: "/imagesNew/casestudies/elev8.png",
         title: "Elev8 Exchange",
         subtitle: "FX"
     },
@@ -51,7 +51,7 @@ const caseStudies = [
         id: 7,
         className: "web",
         link: "https://professional.parlicentre.org",
-        imgSrc: "https://via.placeholder.com/750x905",
+        imgSrc: "imagesNew/casestudies/professional.png",
         title: "ICPS Professionals Network",
         subtitle: "Government"
     },
@@ -59,7 +59,7 @@ const caseStudies = [
         id: 8,
         className: "web",
         link: "https://vanderpumpfx.com",
-        imgSrc: "https://via.placeholder.com/750x905",
+        imgSrc: "imagesNew/casestudies/vanderpumpfx.png",
         title: "Vanderpump FX",
         subtitle: "FX"
     },
@@ -67,7 +67,7 @@ const caseStudies = [
         id: 9,
         className: "backend",
         link: "https://www.gov.uk/government/organisations/department-for-business-and-trade",
-        imgSrc: "https://via.placeholder.com/750x905",
+        imgSrc: "imagesNew/casestudies/dbt.webp",
         title: "Department of Business & Trade",
         subtitle: "Government"
     }
