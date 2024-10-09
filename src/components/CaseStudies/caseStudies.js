@@ -27,7 +27,7 @@ const caseStudies = [
         id: 4,
         className: "mobile",
         link: "https://vanderpump.tech/music",
-        imgSrc: "/imagesNew/casestudies/pumpymusic.png",
+        imgSrc: "/imagesNew/casestudies/pumpy.png",
         title: "Pumpy Music",
         subtitle: "Music Tech"
     },
