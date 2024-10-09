@@ -1,4 +1,5 @@
-import caseStudies, { getSelectors } from "./caseStudies"
+import caseStudies from "./caseStudies"
+import getSelectors from "./getSelectors"
 
 export default function CaseStudies() {
     return (
@@ -51,11 +52,11 @@ function CaseStudy(item) {
     return (
         <li key={item.id} className={`grid-item ${item.className} transition-inner-all`} data-atropos data-atropos-perspective="1450">
             <div className="position-relative">
-                <a href={item.link} className="portfolio-link"></a>
+                <a href={item.link} target="_blank" className="portfolio-link"></a>
                 <div className="atropos-scale">
                     <div className="atropos-rotate">
                         <div className="atropos-inner" data-atropos-offset="3">
-                            <div className={`portfolio-box ${item.bgClass}`}>
+                            <div className={`portfolio-box bg-orange`}>
                                 <div className="portfolio-image">
                                     <img src={item.imgSrc} alt="" />
                                 </div>

@@ -1,100 +1,78 @@
 const caseStudies = [
     {
         id: 1,
-        className: "selected digital",
-        link: "demo-digital-agency-single-project-minimal.html",
+        className: "web",
+        link: "https://patchconsultancy.co.uk",
         imgSrc: "https://via.placeholder.com/750x905",
-        bgClass: "bg-nero-gray",
-        title: "Tailoring",
-        subtitle: "Brochure"
+        title: "Patch",
+        subtitle: "Hospitality Consultancy"
     },
     {
         id: 2,
-        className: "selected branding",
-        link: "demo-digital-agency-single-project-minimal.html",
+        className: "mobile backend",
+        link: "#",
         imgSrc: "https://via.placeholder.com/750x905",
-        bgClass: "bg-dark-gray",
-        title: "Violator",
-        subtitle: "Branding"
+        title: "Met Office",
+        subtitle: "Government"
     },
     {
         id: 3,
-        className: "web branding",
-        link: "demo-digital-agency-single-project-minimal.html",
+        className: "web",
+        link: "https://gigabyte.software",
         imgSrc: "https://via.placeholder.com/750x905",
-        bgClass: "bg-dark-gray",
-        title: "Gardner",
-        subtitle: "Branding"
+        title: "Gigabyte Software",
+        subtitle: "Property Tech"
     },
     {
         id: 4,
-        className: "selected digital",
-        link: "demo-digital-agency-single-project-minimal.html",
+        className: "mobile",
+        link: "https://vanderpump.tech/music",
         imgSrc: "https://via.placeholder.com/750x905",
-        bgClass: "bg-dark-gray",
-        title: "Identity",
-        subtitle: "Poster"
+        title: "Pumpy Music",
+        subtitle: "Music Tech"
     },
     {
         id: 5,
-        className: "selected web digital branding",
-        link: "demo-digital-agency-single-project-minimal.html",
+        className: "web backend",
+        link: "https://electoralnetwork.org",
         imgSrc: "https://via.placeholder.com/750x905",
-        bgClass: "bg-dark-gray",
-        title: "Educamp",
-        subtitle: "Packaging"
+        title: "Electoral Network",
+        subtitle: "Government"
     },
     {
         id: 6,
-        className: "web digital branding",
-        link: "demo-digital-agency-single-project-minimal.html",
+        className: "web",
+        link: "https://elev8exchange.com",
         imgSrc: "https://via.placeholder.com/750x905",
-        bgClass: "bg-dark-gray",
-        title: "Designs",
-        subtitle: "Graphic"
+        title: "Elev8 Exchange",
+        subtitle: "FX"
     },
     {
         id: 7,
-        className: "selected web branding",
-        link: "demo-digital-agency-single-project-minimal.html",
+        className: "web",
+        link: "https://professional.parlicentre.org",
         imgSrc: "https://via.placeholder.com/750x905",
-        bgClass: "bg-dark-gray",
-        title: "Pixflow",
-        subtitle: "Branding"
+        title: "ICPS Professionals Network",
+        subtitle: "Government"
     },
     {
         id: 8,
-        className: "selected web digital branding",
-        link: "demo-digital-agency-single-project-minimal.html",
+        className: "web",
+        link: "https://vanderpumpfx.com",
         imgSrc: "https://via.placeholder.com/750x905",
-        bgClass: "bg-dark-gray",
-        title: "Cropo",
-        subtitle: "Branding"
+        title: "Vanderpump FX",
+        subtitle: "FX"
     },
     {
         id: 9,
-        className: "web digital",
-        link: "demo-digital-agency-single-project-minimal.html",
+        className: "backend",
+        link: "https://www.gov.uk/government/organisations/department-for-business-and-trade",
         imgSrc: "https://via.placeholder.com/750x905",
-        bgClass: "bg-dark-gray",
-        title: "Herbal",
-        subtitle: "Graphic"
+        title: "Department of Business & Trade",
+        subtitle: "Government"
     }
 ];
 
 export default caseStudies;
-
-function getSelectors() {
-    const allValue = 'All'
-    const classNames = caseStudies.map(item => item.className);
-    const unique = [...new Set(classNames.flatMap(className => className.split(' ')))];
-    const categories = [allValue, ...unique];
-    return categories.map((item) => ({
-        tagName: item.charAt(0).toUpperCase() + item.slice(1),
-        selector: item === allValue ? "*" : `.${item.toLowerCase()}`
-    }));
-}
-
-export { getSelectors };
 
 

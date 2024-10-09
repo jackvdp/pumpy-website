@@ -4,7 +4,7 @@ export default function HowItWorks() {
             <div className="container">
                 <div className="row mb-7 sm-mb-50px">
                     <div className="col-12 col-xl-9 col-lg-12">
-                        <h2 className="text-white fw-500 ls-minus-2px mb-0 alt-font" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "filter": ["blur(20px)", "blur(0px)"], "string": ["Your Vision, Digitally Realised: A Personalized Journey."], "duration": 400, "delay": 0, "speed": 20, "easing": "easeOutQuad" }'></h2>
+                        <h2 className="text-white fw-500 ls-minus-2px mb-0 alt-font" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "filter": ["blur(20px)", "blur(0px)"], "string": ["Your vision, digitally realised: the personalized choice."], "duration": 400, "delay": 0, "speed": 20, "easing": "easeOutQuad" }'></h2>
                     </div>
                 </div>
                 <Steps />

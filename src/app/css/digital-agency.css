@@ -13,6 +13,10 @@
     --light-red: #c8b2ab;
     --alt-font: 'Space Grotesk', sans-serif;
     --primary-font: 'Inter', sans-serif;
+    --pink: #db2777;
+    --pumpyBlue: #93c5fd;
+    --pumpyBGBlue: #bfdbfe;
+    --pumpyOrange: #f97316;
 }
 /* custom cursor */
 @media (hover: hover) and (pointer: fine) {
@@ -83,6 +87,9 @@ header .header-button .btn.btn-switch-text > span {
 /* bg color */
 .bg-nero-gray {
     background-color: var(--nero-gray);
+}
+.bg-orange {
+    background-color: var(--pumpyOrange);
 }
 /* bg sliding line */ 
 .bg-sliding-line { 
