@@ -9,6 +9,7 @@ import About from "@/components/About";
 import HowItWorks from "@/components/Process";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import CaseStudies from "@/components/CaseStudies";
+import Parallax from "@/components/Parallax";
 
 export default function Home() {
   const scriptsLoadedRef = useRef(false);
@@ -55,6 +56,7 @@ export default function Home() {
       <About />
       <HowItWorks />
       <CaseStudies />
+      <Parallax />
       <section>
         <div className="container">
           <div className="row mb-3 sm-mb-0">
@@ -88,81 +90,6 @@ export default function Home() {
                   <h2 className="alt-font vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px mt-20 sm-mb-0" data-text="%" data-to="300"><sup className="top-0"><i className="feather icon-feather-arrow-up icon-very-medium text-dark-gray"></i></sup></h2>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="big-section" data-parallax-background-ratio="0.5" style={{ backgroundImage: "url(https://via.placeholder.com/1920x1100)" }}>
-        <div className="container">
-          <div className="row mb-15">
-            <div className="col-12 col-xxl-7 col-xl-8">
-              <h2 className="text-dark-gray text-white alt-font fw-500 ls-minus-2px w-95 md-w-100" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "filter": ["blur(20px)", "blur(0px)"], "string": ["Forward thinking team of designers, copywriters and developers."], "duration": 400, "delay": 0, "speed": 20, "easing": "easeOutQuad" }'></h2>
-            </div>
-          </div>
-          <div className="row" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-            <div className="col-6 col-lg-3 col-md-4">
-              <a href="#"><img src="images/demo-digital-agency-envato.svg" alt="" /></a>
-              <div className="fs-14 fw-500 text-white border-top border-color-dark-gray pt-15px mt-30px text-uppercase">3x site of the day</div>
-            </div>
-            <div className="col-6 col-lg-3 col-md-4">
-              <a href="#"><img src="images/demo-digital-agency-awwards.svg" alt="" /></a>
-              <div className="fs-14 fw-500 text-white border-top border-color-dark-gray pt-15px mt-30px text-uppercase">2x developer award</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="pb-0">
-        <div className="container">
-          <div className="row align-items-center mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-            <div className="col-md-6 text-center text-md-start sm-mb-20px">
-              <h2 className="fw-600 text-dark-gray mb-0 ls-minus-3px alt-font">Our journal</h2>
-            </div>
-            <div className="col-md-6 text-center text-md-end">
-              <a href="demo-digital-agency-blog.html" className="btn btn-link btn-hover-animation-switch primary-font text-dark-gray fs-18">
-                <span>
-                  <span className="btn-text">Read all posts</span>
-                  <span className="btn-icon"><i className="feather icon-feather-arrow-right"></i></span>
-                  <span className="btn-icon"><i className="feather icon-feather-arrow-right"></i></span>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12 p-md-0">
-              <ul className="blog-only-text blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-large" data-anime='{"el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <li className="grid-sizer"></li>
-                <li className="grid-item">
-                  <div className="card bg-base-color border-radius-0px border-0 h-100 overflow-hidden">
-                    <div className="card-body hover-box dark-hover p-15 lg-p-10">
-                      <img src="https://via.placeholder.com/754x833" className="hover-img" alt="" />
-                      <a href="#" className="categories-btn ms-0 bg-white text-dark-gray text-uppercase fw-600 mb-70px">Branding</a>
-                      <a href="#" className="fs-13 text-uppercase d-block mb-5px text-dark-gray fw-500 mt-60px">Jonse robbert</a>
-                      <a href="demo-digital-agency-blog-single-creative.html" className="card-title d-block fs-22 sm-fs-20 ls-minus-05px fw-500 text-dark-gray mb-0 w-90 lg-w-100">Design can speak the in tongue of art force of commerce.</a>
-                    </div>
-                  </div>
-                </li>
-                <li className="grid-item">
-                  <div className="card bg-base-color border-radius-0px border-0 h-100 overflow-hidden">
-                    <div className="card-body hover-box dark-hover p-15 lg-p-10">
-                      <img src="https://via.placeholder.com/754x833" className="hover-img" alt="" />
-                      <a href="#" className="categories-btn ms-0 bg-white text-dark-gray text-uppercase fw-600 mb-70px">Design</a>
-                      <a href="#" className="fs-13 text-uppercase d-block mb-5px text-dark-gray fw-500 mt-60px">Den viliamson</a>
-                      <a href="demo-digital-agency-blog-single-creative.html" className="card-title d-block fs-22 sm-fs-20 ls-minus-05px fw-500 text-dark-gray mb-0 w-90 lg-w-100">Simplicity is process the obvious and adding meaningful.</a>
-                    </div>
-                  </div>
-                </li>
-                <li className="grid-item">
-                  <div className="card bg-base-color border-radius-0px border-0 h-100 overflow-hidden">
-                    <div className="card-body hover-box dark-hover p-15 lg-p-10">
-                      <img src="https://via.placeholder.com/754x833" className="hover-img" alt="" />
-                      <a href="#" className="categories-btn ms-0 bg-white text-dark-gray text-uppercase fw-600 mb-70px">Digital</a>
-                      <a href="#" className="fs-13 text-uppercase d-block mb-5px text-dark-gray fw-500 mt-60px">Rosald smith</a>
-                      <a href="demo-digital-agency-blog-single-creative.html" className="card-title d-block fs-22 sm-fs-20 ls-minus-05px fw-500 text-dark-gray mb-0 w-90 lg-w-100">Good design obvious, great design is more transparent.
-                      </a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
