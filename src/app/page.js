@@ -10,6 +10,7 @@ import HowItWorks from "@/components/Process";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import CaseStudies from "@/components/CaseStudies";
 import Parallax from "@/components/Parallax";
+import Facts from "@/components/Facts";
 
 export default function Home() {
   const scriptsLoadedRef = useRef(false);
@@ -57,43 +58,7 @@ export default function Home() {
       <HowItWorks />
       <CaseStudies />
       <Parallax />
-      <section>
-        <div className="container">
-          <div className="row mb-3 sm-mb-0">
-            <div className="col-12 col-xxl-9 col-xl-10">
-              <h2 className="text-dark-gray fw-600 alt-font ls-minus-3px w-95 md-w-100 highlight-separator-small">Intuition and strategy integrate the research methodology that we also apply to <span className="highlight-separator mb-0 pb-0" data-shadow-animation="true" data-animation-delay="500"> traditional<span><img src="images/demo-digital-agency-highlight-separator.png" alt="" /></span></span> media.</h2>
-            </div>
-          </div>
-          <div className="row mb-3 md-mb-0">
-            <div className="col-12 col-lg-4 col-md-8 md-mb-50px">
-              <div className="position-sticky top-120px" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <p className="w-75 lg-w-100 mb-40px">We combine human empathy and intelligent data to provide the <span className="text-dark-gray text-decoration-line-bottom fw-600">highest level of satisfaction.</span></p>
-                <a href="#" className="btn btn-large btn-dark-gray btn-box-shadow">Let's talk now<i className="fa-regular fa-envelope"></i></a>
-              </div>
-            </div>
-            <div className="col-12 col-lg-8 col-md-12">
-              <div className="row g-0 counter-style-04" data-anime='{ "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                <div className="col-12 col-md-6 border-start border-bottom border-color-extra-medium-gray sm-border-end ps-60px pe-60px lg-ps-40px lg-pe-40px lg-pt-30px pt-40px pb-30px">
-                  <p className="fs-19 text-dark-gray mb-30 fw-500 w-85 sm-mb-15">Users on marketplaces we've created in 2023.</p>
-                  <h2 className="alt-font vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px mt-20 sm-mb-0" data-text="+" data-to="8500"><sup className="top-0"><i className="feather icon-feather-arrow-up icon-very-medium text-dark-gray"></i></sup></h2>
-                </div>
-                <div className="col-12 col-md-6 border-start border-bottom border-end border-color-extra-medium-gray ps-60px pe-60px lg-ps-40px lg-pe-40px lg-pt-30px pt-40px pb-30px">
-                  <p className="fs-19 text-dark-gray mb-30 fw-500 w-85 sm-mb-15">Successfully finished projects with creativity.</p>
-                  <h2 className="alt-font vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px mt-20 sm-mb-0" data-text="+" data-to="660"><sup className="top-0"><i className="feather icon-feather-arrow-up icon-very-medium text-dark-gray"></i></sup></h2>
-                </div>
-                <div className="col-12 col-md-6 border-start border-color-extra-medium-gray sm-border-bottom sm-border-end ps-60px pe-60px lg-ps-40px lg-pe-40px lg-pt-30px pt-40px pb-30px">
-                  <p className="fs-19 text-dark-gray mb-30 fw-500 w-85 sm-mb-15">Monthly visitors on our e-Commerce platform.</p>
-                  <h2 className="alt-font vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px mt-20 sm-mb-0" data-text="+" data-to="6834"><sup className="top-0"><i className="feather icon-feather-arrow-up icon-very-medium text-dark-gray"></i></sup></h2>
-                </div>
-                <div className="col-12 col-md-6 border-start border-end border-color-extra-medium-gray ps-60px pe-60px lg-ps-40px lg-pe-40px lg-pt-30px pt-40px pb-30px">
-                  <p className="fs-19 text-dark-gray mb-30 fw-500 w-85 sm-mb-15">Onboarding conversions growth increased.</p>
-                  <h2 className="alt-font vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px mt-20 sm-mb-0" data-text="%" data-to="300"><sup className="top-0"><i className="feather icon-feather-arrow-up icon-very-medium text-dark-gray"></i></sup></h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Facts />
       <section className="half-section pb-0">
         <div className="container-fluid">
           <div className="row position-relative">
