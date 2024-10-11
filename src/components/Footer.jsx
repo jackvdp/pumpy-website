@@ -45,7 +45,7 @@ export default function Footer() {
                     <div className="col-12">
                         <div className="divider-style-03 divider-style-03-01 border-color-extra-medium-gray"></div>
                     </div>
-                    <div className="col-lg-5 pt-15px pb-15px md-pt-0 fs-15 order-2 order-lg-1 text-center text-lg-start last-paragraph-no-margin"><p>© 2024 Vanderpump Tech</p></div>
+                    <div className="col-lg-5 pt-15px pb-15px md-pt-0 fs-15 order-2 order-lg-1 text-center text-lg-start last-paragraph-no-margin"><p>© {new Date().getFullYear().toString()} Vanderpump Tech</p></div>
                     <div className="col-lg-7 pt-15px pb-15px md-pb-5px fs-15 order-1 order-lg-2 text-center text-lg-end"></div>
                 </div>
             </div>
