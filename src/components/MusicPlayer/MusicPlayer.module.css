@@ -1,0 +1,58 @@
+/* src/components/MusicPlayer.module.css */
+
+.playerContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.9);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.playPauseButton {
+    background: none;
+    border: none;
+    color: #1db954;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.playPauseButton:hover {
+    color: #1ed760;
+}
+
+.volumeControl,
+.playbackRateControl {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.volumeControl label,
+.playbackRateControl label {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.volumeControl input[type='range'] {
+    width: 100px;
+}
+
+.playbackRateControl select {
+    padding: 2px 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+}

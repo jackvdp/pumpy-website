@@ -3,6 +3,8 @@ import "./css/vendors.css"
 import "./css/style.css"
 import "./css/responsive.css"
 import "./css/digital-agency.css"
+import MusicPlayer from "@/components/MusicPlayer/MusicPlayer"
+import { MusicPlayerProvider } from "@/components/MusicPlayer/MusicPlayerProvider"
 
 export const metadata = {
   title: "Create Next App",
@@ -24,7 +26,10 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       </head>
       <body>
-        {children}
+        <MusicPlayerProvider>
+          {children}
+          <MusicPlayer />
+        </MusicPlayerProvider>
       </body>
     </html>
   );

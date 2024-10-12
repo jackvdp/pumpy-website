@@ -11,7 +11,7 @@ export default function Parallax() {
                         data-fancy-text=
                         {`{ "opacity": [0, 1], "translateY": [50, 0], "filter": ["blur(20px)", "blur(0px)"], "string": ${text}, "duration": 400, "delay": 0, "speed": 20, "easing": "easeOutQuad" }`} 
                         />
-                        <a href="/contact" class="btn btn-large btn-gradient-pink-orange d-table d-lg-inline-block xl-mb-15px md-mx-auto">Get in touch!</a>
+                        <a href="/contact" className="btn btn-large btn-gradient-pink-orange d-table d-lg-inline-block xl-mb-15px md-mx-auto">Get in touch!</a>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,6 @@ import Parallax from "@/components/Parallax";
 import Facts from "@/components/Facts";
 import Marquee from "@/components/Marquee";
 import Footer from "@/components/Footer";
-import Script from "next/script";
 
 export default function Home() {
   const scriptsLoadedRef = useRef(false);
@@ -23,7 +22,6 @@ export default function Home() {
       try {
         await loadScript('/js/jquery.js');
         await loadScript('/js/vendors.js');
-        console.log('Vendors loaded');
         await loadScript('/js/main.js');
       } catch (error) {
         console.error('Error loading scripts:', error);
@@ -38,7 +36,7 @@ export default function Home() {
     // Cleanup function
     return () => {
       if (typeof window !== 'undefined') {
-        ['vendors.min.js', 'main.js'].forEach(src => {
+        ['jquery.js', 'vendors.min.js', 'main.js'].forEach(src => {
           const script = document.querySelector(`script[src="/js/${src}"]`);
           if (script) {
             document.body.removeChild(script);

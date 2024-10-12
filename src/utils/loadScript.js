@@ -9,7 +9,6 @@ const loadScript = (src) => {
       script.src = src;
       script.async = false; // Ensures scripts are executed in order
       script.onload = () => {
-        console.log(`${src} loaded`);
         resolve();
       };
       script.onerror = () => reject(new Error(`Failed to load script ${src}`));
