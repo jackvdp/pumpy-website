@@ -1,5 +1,5 @@
-import "./css/icon.min.css"
-import "./css/vendors.min.css"
+import "./css/icon.css"
+import "./css/vendors.css"
 import "./css/style.css"
 import "./css/responsive.css"
 import "./css/digital-agency.css"

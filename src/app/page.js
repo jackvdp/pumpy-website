@@ -13,6 +13,7 @@ import Parallax from "@/components/Parallax";
 import Facts from "@/components/Facts";
 import Marquee from "@/components/Marquee";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 export default function Home() {
   const scriptsLoadedRef = useRef(false);
@@ -21,7 +22,8 @@ export default function Home() {
     const loadScripts = async () => {
       try {
         await loadScript('/js/jquery.js');
-        await loadScript('/js/vendors.min.js');
+        await loadScript('/js/vendors.js');
+        console.log('Vendors loaded');
         await loadScript('/js/main.js');
       } catch (error) {
         console.error('Error loading scripts:', error);
@@ -36,7 +38,7 @@ export default function Home() {
     // Cleanup function
     return () => {
       if (typeof window !== 'undefined') {
-        ['jquery.js', 'vendors.min.js', 'main.js'].forEach(src => {
+        ['vendors.min.js', 'main.js'].forEach(src => {
           const script = document.querySelector(`script[src="/js/${src}"]`);
           if (script) {
             document.body.removeChild(script);
@@ -48,22 +50,24 @@ export default function Home() {
   }, []);
 
   return (
-    <div data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#2d2c2b" className="custom-cursor">
-      <div className="cursor-page-inner">
-        <div className="circle-cursor circle-cursor-inner"></div>
-        <div className="circle-cursor circle-cursor-outer"></div>
+    <>
+      <div data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#2d2c2b" className="custom-cursor">
+        <div className="cursor-page-inner">
+          <div className="circle-cursor circle-cursor-inner"></div>
+          <div className="circle-cursor circle-cursor-outer"></div>
+        </div>
+        <Navbar />
+        <Hero />
+        <Logos />
+        <About />
+        <HowItWorks />
+        <CaseStudies />
+        <Facts />
+        <Parallax />
+        <Marquee />
+        <Footer />
+        <ScrollIndicator />
       </div>
-      <Navbar />
-      <Hero />
-      <Logos />
-      <About />
-      <HowItWorks />
-      <CaseStudies />
-      <Facts />
-      <Parallax />
-      <Marquee />
-      <Footer />
-      <ScrollIndicator />
-    </div>
+    </>
   );
 }
