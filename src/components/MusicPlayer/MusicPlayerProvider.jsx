@@ -1,8 +1,14 @@
 "use client";
 import React, { createContext, useState, useRef } from 'react';
-import ReactPlayer from 'react-player/soundcloud';
+import dynamic from 'next/dynamic';
+const ReactPlayer = dynamic(() => import('react-player/soundcloud'), { ssr: false });
 
 export const MusicPlayerContext = createContext();
+import { useContext } from 'react';
+
+export const useMusicPlayer = () => {
+    return useContext(MusicPlayerContext);
+};
 
 export const MusicPlayerProvider = ({ children }) => {
     const [isPlaying, setIsPlaying] = useState(false);

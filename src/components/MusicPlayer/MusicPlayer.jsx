@@ -1,17 +1,14 @@
-// src/components/MusicPlayer.js
-
 'use client';
 
-import React, { useContext } from 'react';
-import { MusicPlayerContext } from './MusicPlayerProvider';
-import ReactPlayer from 'react-player/soundcloud';
-import styles from './MusicPlayer.module.css'; // Create this CSS module for styling
+import React from 'react';
+import { useMusicPlayer } from './MusicPlayerProvider';
+import styles from './MusicPlayer.module.css';
 
 const MusicPlayer = () => {
     const {
         isPlaying,
         togglePlay,
-    } = useContext(MusicPlayerContext);
+    } = useMusicPlayer();
 
     return (
         <div className={styles.playerContainer}>
