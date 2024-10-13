@@ -15,8 +15,7 @@ export const MusicPlayerProvider = ({ children }) => {
     const playerRef = useRef(null);
 
     useEffect(() => {
-        const shuffledPlaylist = shuffleArray(tracksData);
-        setPlaylist(shuffledPlaylist);
+        setPlaylist(shuffleArray(tracksData));
     }, []);
 
     const togglePlay = () => {
@@ -24,25 +23,15 @@ export const MusicPlayerProvider = ({ children }) => {
     };
 
     const nextTrack = () => {
-        if (isShuffling) {
-            const randomIndex = Math.floor(Math.random() * playlist.length);
-            setCurrentTrackIndex(randomIndex);
-        } else {
-            setCurrentTrackIndex((prevIndex) =>
-                prevIndex < playlist.length - 1 ? prevIndex + 1 : 0
-            );
-        }
+        setCurrentTrackIndex((prevIndex) =>
+            prevIndex < playlist.length - 1 ? prevIndex + 1 : 0
+        );
     };
 
     const prevTrack = () => {
-        if (isShuffling) {
-            const randomIndex = Math.floor(Math.random() * playlist.length);
-            setCurrentTrackIndex(randomIndex);
-        } else {
-            setCurrentTrackIndex((prevIndex) =>
-                prevIndex > 0 ? prevIndex - 1 : playlist.length - 1
-            );
-        }
+        setCurrentTrackIndex((prevIndex) =>
+            prevIndex > 0 ? prevIndex - 1 : playlist.length - 1
+        );
     };
 
     const handleEnded = () => {
