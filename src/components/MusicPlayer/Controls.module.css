@@ -1,6 +1,6 @@
 .controlsContainer {
     margin-left: 15px;
-    padding: 10px 15px;
+    padding: 0px 15px;
     border-radius: 8px;
     opacity: 0;
     transform: translateX(-10px);
@@ -9,6 +9,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* dark blur background of empty div */
+.blur {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .show {
@@ -29,7 +39,12 @@
     margin-right: 10px;
     transition: color 0.3s ease;
     border: 2px solid transparent;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
+
+.small {
+    font-size: 36px !important;
+};
 
 .controlButton:hover {
     transform: scale(1.2);
@@ -39,16 +54,25 @@
 .trackInfo {
     display: flex;
     flex-direction: column;
+    text-shadow: 0 0px 8px rgba(0, 0, 0, 1);
 }
 
 .title {
     font-weight: bold;
     font-size: 14px;
     color: #fff;
+    line-height: normal;
 }
 
 .artist {
-    font-weight: bold;
-    font-size: 12px;
-    opacity: 0.7;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    line-height: normal;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+/* bottom of container */
+.alignBottomOfContainer {
+    align-self: flex-end;
 }

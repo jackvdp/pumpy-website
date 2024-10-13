@@ -59,6 +59,7 @@ const MusicPlayer = () => {
                 togglePlay={togglePlay}
                 isPlaying={isPlaying}
                 nextTrack={nextTrack}
+                prevTrack={prevTrack}
                 currentTrack={currentTrack}
             />
         </div>
