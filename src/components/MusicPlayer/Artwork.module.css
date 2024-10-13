@@ -1,0 +1,47 @@
+.artworkContainer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: visible;
+}
+
+.artwork {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.vinyl {
+    position: absolute;
+    top: 5px;
+    left: 0%;
+    width: 90px;
+    height: 90px;
+    transition: left 1s ease;
+    z-index: 1;
+}
+
+.expose {
+    left: 50%;
+    transition: left 1s ease;
+}
+
+.spin {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

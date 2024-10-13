@@ -3,6 +3,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { MusicPlayerContext } from './MusicPlayerProvider';
 import styles from './MusicPlayer.module.css';
+import Artwork from './Artwork';
+import Controls from './Controls';
 
 const MusicPlayer = () => {
     const {
@@ -22,7 +24,6 @@ const MusicPlayer = () => {
         setShowControls(prev => !prev);
     };
 
-    // Keyboard Shortcuts
     useEffect(() => {
         const handleKeyDown = (e) => {
             switch (e.key) {
@@ -50,44 +51,16 @@ const MusicPlayer = () => {
     return (
         <div className={styles.playerContainer}>
             {currentTrack.picture && (
-                <div className={styles.artworkContainer} onClick={handleArtworkClick}>
-                    <img
-                        src={currentTrack.picture}
-                        alt={`${currentTrack.title} Artwork`}
-                        className={styles.artwork}
-                    />
-                    <img
-                        src="/imagesNew/vinyl.png"
-                        alt="Vinyl"
-                        className={`${styles.vinyl} ${styles.spin} ${isPlaying && styles.expose}`}
-                    />
-                </div>
+                <Artwork currentTrack={currentTrack} isPlaying={isPlaying} handleArtworkClick={handleArtworkClick} />
             )}
 
-            <div className={`${styles.controlsContainer} ${showControls ? styles.show : ''}`}>
-                <div className={styles.controls}>
-                    <button
-                        onClick={togglePlay}
-                        className={styles.controlButton}
-                        aria-label={isPlaying ? 'Pause' : 'Play'}
-                    >
-                        <i className={`bi ${isPlaying ? 'bi-pause-fill' : 'bi-play-fill'}`}></i>
-                    </button>
-
-                    <button
-                        onClick={nextTrack}
-                        className={styles.controlButton}
-                        aria-label="Next Track"
-                    >
-                        <i className="bi bi-skip-forward-fill"></i>
-                    </button>
-                </div>
-
-                <div className={styles.trackInfo}>
-                    <span className={styles.title}>{currentTrack.title || 'No Track'}</span>
-                    <span className={styles.artist}>{currentTrack.artist || 'Unknown Artist'}</span>
-                </div>
-            </div>
+            <Controls
+                showControls={showControls}
+                togglePlay={togglePlay}
+                isPlaying={isPlaying}
+                nextTrack={nextTrack}
+                currentTrack={currentTrack}
+            />
         </div>
     );
 };
