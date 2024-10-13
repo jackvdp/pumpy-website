@@ -1,8 +1,8 @@
 .playerContainer {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 25px;
+    left: 25px;
     z-index: 1000;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }

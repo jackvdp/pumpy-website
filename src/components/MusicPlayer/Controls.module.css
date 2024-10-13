@@ -1,11 +1,9 @@
 .controlsContainer {
     margin-left: 15px;
-    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateX(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
     color: #fff;
     display: flex;
@@ -21,21 +19,21 @@
 .controls {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .controlButton {
     background: none;
-    border: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 48px;
     cursor: pointer;
     margin-right: 10px;
     transition: color 0.3s ease;
+    border: 2px solid transparent;
 }
 
 .controlButton:hover {
-    color: #1db954;
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
 }
 
 .trackInfo {
@@ -50,6 +48,7 @@
 }
 
 .artist {
+    font-weight: bold;
     font-size: 12px;
-    color: #aaa;
+    opacity: 0.7;
 }
