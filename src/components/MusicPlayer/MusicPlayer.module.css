@@ -1,5 +1,3 @@
-/* src/components/MusicPlayer.module.css */
-
 .playerContainer {
     position: fixed;
     bottom: 20px;
@@ -12,19 +10,12 @@
 .artworkContainer {
     position: relative;
     width: 100px;
-    /* Adjust as needed */
     height: 100px;
-    /* Adjust as needed */
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     overflow: visible;
-    /* Allow vinyl to show outside */
     transition: box-shadow 0.3s ease;
-}
-
-.artworkContainer:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 .artwork {
@@ -34,37 +25,34 @@
     border-radius: 8px;
     position: relative;
     z-index: 2;
-    /* Ensure artwork is above vinyl */
 }
 
 .vinyl {
     position: absolute;
-    top: 50%;
-    left: 100%;
+    top: 5px;
+    left: 0%;
     width: 90px;
-    /* Slightly smaller than artwork height (100px) */
     height: 90px;
-    /* Slightly smaller than artwork height (100px) */
-    transform: translate(-100%, -50%);
-    /* Initially hidden behind artwork */
-    transition: transform 0.5s ease;
+    transition: left 1s ease;
     z-index: 1;
-    /* Ensure vinyl is behind artwork */
+}
+
+.expose {
+    left: 50%;
+    transition: left 1s ease;
 }
 
 .spin {
     animation: spin 4s linear infinite;
-    transform: translate(-50%, -50%);
-    /* Slide vinyl out to the right */
 }
 
 @keyframes spin {
     from {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: rotate(0deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 

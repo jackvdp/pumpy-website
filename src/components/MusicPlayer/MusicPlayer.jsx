@@ -1,8 +1,6 @@
-// src/components/MusicPlayer.js
-
 "use client";
 
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { MusicPlayerContext } from './MusicPlayerProvider';
 import styles from './MusicPlayer.module.css';
 
@@ -11,6 +9,7 @@ const MusicPlayer = () => {
         isPlaying,
         togglePlay,
         nextTrack,
+        prevTrack,
         playlist,
         currentTrackIndex
     } = useContext(MusicPlayerContext);
@@ -23,9 +22,33 @@ const MusicPlayer = () => {
         setShowControls(prev => !prev);
     };
 
+    // Keyboard Shortcuts
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            switch (e.key) {
+                case ' ':
+                    e.preventDefault();
+                    togglePlay();
+                    break;
+                case 'ArrowRight':
+                    nextTrack();
+                    break;
+                case 'ArrowLeft':
+                    prevTrack();
+                    break;
+                default:
+                    break;
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [togglePlay, nextTrack, prevTrack]);
+
     return (
         <div className={styles.playerContainer}>
-            {/* Album Artwork */}
             {currentTrack.picture && (
                 <div className={styles.artworkContainer} onClick={handleArtworkClick}>
                     <img
@@ -33,19 +56,16 @@ const MusicPlayer = () => {
                         alt={`${currentTrack.title} Artwork`}
                         className={styles.artwork}
                     />
-                    {/* Vinyl Image */}
                     <img
                         src="/imagesNew/vinyl.png"
                         alt="Vinyl"
-                        className={`${styles.vinyl} ${isPlaying ? styles.spin : ''}`}
+                        className={`${styles.vinyl} ${styles.spin} ${isPlaying && styles.expose}`}
                     />
                 </div>
             )}
 
-            {/* Controls Overlay */}
             <div className={`${styles.controlsContainer} ${showControls ? styles.show : ''}`}>
                 <div className={styles.controls}>
-                    {/* Play/Pause Button */}
                     <button
                         onClick={togglePlay}
                         className={styles.controlButton}
@@ -54,7 +74,6 @@ const MusicPlayer = () => {
                         <i className={`bi ${isPlaying ? 'bi-pause-fill' : 'bi-play-fill'}`}></i>
                     </button>
 
-                    {/* Next Track Button */}
                     <button
                         onClick={nextTrack}
                         className={styles.controlButton}
@@ -64,7 +83,6 @@ const MusicPlayer = () => {
                     </button>
                 </div>
 
-                {/* Track Information */}
                 <div className={styles.trackInfo}>
                     <span className={styles.title}>{currentTrack.title || 'No Track'}</span>
                     <span className={styles.artist}>{currentTrack.artist || 'Unknown Artist'}</span>
