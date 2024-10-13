@@ -1,3 +1,6 @@
+"use client";
+
+import React from 'react';
 import styles from './Controls.module.css';
 
 export default function Controls({ showControls, togglePlay, isPlaying, nextTrack, prevTrack, currentTrack }) {
@@ -10,10 +13,9 @@ export default function Controls({ showControls, togglePlay, isPlaying, nextTrac
             </div>
 
             <div className={styles.controls}>
-
                 <button
                     onClick={prevTrack}
-                    className={styles.controlButton + ' ' + styles.small}
+                    className={`${styles.controlButton} ${styles.small}`}
                     aria-label="Previous Track"
                 >
                     <i className="bi bi-rewind-fill"></i>
@@ -29,12 +31,12 @@ export default function Controls({ showControls, togglePlay, isPlaying, nextTrac
 
                 <button
                     onClick={nextTrack}
-                    className={styles.controlButton + ' ' + styles.small}
+                    className={`${styles.controlButton} ${styles.small}`}
                     aria-label="Next Track"
                 >
                     <i className="bi bi-fast-forward-fill"></i>
                 </button>
             </div>
         </div>
-    )
+    );
 }
