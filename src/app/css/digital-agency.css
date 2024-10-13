@@ -2,8 +2,7 @@
     Crafto - Digital agency
 ====================================== */
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 /* variable */
 :root {     
     --base-color: #f7d2ca;
@@ -11,7 +10,7 @@
     --dark-gray:#2d2c2b; 
     --nero-gray:#1e1d1d;  
     --light-red: #c8b2ab;
-    --alt-font: 'Space Grotesk', sans-serif;
+    --alt-font: "Inter", sans-serif;
     --primary-font: 'Inter', sans-serif;
     --pink: #db2777;
     --pumpyBlue: #93c5fd;
