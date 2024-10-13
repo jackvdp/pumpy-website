@@ -5,7 +5,7 @@ import styles from './Controls.module.css';
 
 export default function Controls({ showControls, togglePlay, isPlaying, nextTrack, prevTrack, currentTrack }) {
     return (
-        <div className={`${styles.controlsContainer} ${showControls ? styles.show : ''} ${styles.blur}`}>
+        <div className={`${styles.controlsContainer} ${showControls ? styles.show : ''}`}>
 
             <div className={styles.trackInfo}>
                 <span className={styles.title}>{currentTrack.title || 'No Track'}</span>

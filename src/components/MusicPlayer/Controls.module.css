@@ -11,15 +11,6 @@
     align-items: flex-start;
 }
 
-.blur {
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: none;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-}
-
 .show {
     opacity: 1;
     transform: translateY(0);
@@ -38,7 +29,6 @@
     margin-right: 10px;
     transition: transform 0.5s ease;
     border: none;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .small {
@@ -52,7 +42,12 @@
 .trackInfo {
     display: flex;
     flex-direction: column;
-    text-shadow: 0 0px 8px rgba(0, 0, 0, 1);
+}
+
+.title,
+.artist,
+.controlButton  {
+    text-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.8), 0 0 60px rgba(0, 0, 0, 0.8);
 }
 
 .title {
@@ -60,14 +55,14 @@
     font-size: 14px;
     color: #fff;
     line-height: normal;
+    z-index: 9999;
 }
 
 .artist {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 14px;
     color: #fff;
     line-height: normal;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }
 
 .alignBottomOfContainer {
