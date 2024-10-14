@@ -18,7 +18,7 @@ const MusicPlayer = () => {
 
     const currentTrack = playlist[currentTrackIndex] || {};
 
-    const [showControls, setShowControls] = useState(false);
+    const [showControls, setShowControls] = useState(true);
 
     const handleArtworkClick = () => {
         setShowControls(prev => !prev);
