@@ -49,23 +49,16 @@ export default function Home() {
 
   return (
     <>
-      <div data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#2d2c2b" className="custom-cursor">
-        <div className="cursor-page-inner">
-          <div className="circle-cursor circle-cursor-inner"></div>
-          <div className="circle-cursor circle-cursor-outer"></div>
-        </div>
-        <Navbar />
-        <Hero />
-        <Logos />
-        <About />
-        <HowItWorks />
-        <CaseStudies />
-        <Facts />
-        <Parallax />
-        <Marquee />
-        <Footer />
-        <ScrollIndicator />
-      </div>
+      <Navbar />
+      <Hero />
+      <Logos />
+      <About />
+      <HowItWorks />
+      <CaseStudies />
+      <Facts />
+      <Parallax />
+      <Marquee />
+      <Footer />
     </>
   );
 }

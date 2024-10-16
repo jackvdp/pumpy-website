@@ -3,6 +3,7 @@ export default function Navbar() {
         { href: "/about", text: "About" },
         { href: "/services", text: "Services" },
         { href: "/casestudies", text: "Case Studies" },
+        { href: "/music", text: "Music" },
         { href: "/contact", text: "Contact" }
     ];
 
