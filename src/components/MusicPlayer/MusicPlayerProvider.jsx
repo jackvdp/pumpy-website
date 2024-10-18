@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useState, useRef, useEffect } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import tracksData from '@/data/tracks.json';
 import { shuffleArray } from '@/utils/shuffle';
 import dynamic from 'next/dynamic';
@@ -12,7 +12,6 @@ export const MusicPlayerProvider = ({ children }) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [playlist, setPlaylist] = useState([]);
     const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-    const playerRef = useRef(null);
 
     useEffect(() => {
         setPlaylist(shuffleArray(tracksData));
@@ -51,14 +50,26 @@ export const MusicPlayerProvider = ({ children }) => {
                 currentTrackIndex,
             }}
         >
-            <ReactPlayer
-                ref={playerRef}
-                url={currentTrack.trackLink}
-                playing={isPlaying}
-                onEnded={handleEnded}
-                controls={false}
-                style={{ display: 'none' }}
-            />
+            <div style={{
+                position: 'fixed',
+                bottom: 0,
+                left: 0,
+                width: '100px',
+                height: '100px',
+                overflow: 'hidden',
+                opacity: 0,
+                pointerEvents: 'none',
+                zIndex: -1000
+            }}>
+                <ReactPlayer
+                    url={currentTrack.trackLink}
+                    playing={isPlaying}
+                    onEnded={handleEnded}
+                    controls={false}
+                    width="100%"
+                    height="100%"
+                />
+            </div>
             {children}
         </MusicPlayerContext.Provider>
     );
