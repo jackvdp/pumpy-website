@@ -6,7 +6,7 @@ export default function CaseStudy(item) {
                 <div className="atropos-scale">
                     <div className="atropos-rotate">
                         <div className="atropos-inner" data-atropos-offset="3">
-                            <div className={`portfolio-box bg-pumpy-orange`}>
+                            <div className={`portfolio-box bg-pumpy-orange foo`}>
                                 <div className="portfolio-image">
                                     <img src={item.imgSrc} alt="" />
                                 </div>
