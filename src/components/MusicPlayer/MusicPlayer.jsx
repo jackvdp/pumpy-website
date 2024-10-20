@@ -20,10 +20,12 @@ const MusicPlayer = () => {
 
     const currentTrack = playlist[currentTrackIndex] || {};
 
-    const [showControls, setShowControls] = useState(true);
+    const [showControls, setShowControls] = useState(false);
 
     const handleArtworkClick = () => {
-        setShowControls(prev => !prev);
+        if (playerState === 'stopped') {
+            togglePlay();
+        } 
     };
 
     useEffect(() => {

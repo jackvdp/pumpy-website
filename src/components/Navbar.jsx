@@ -1,5 +1,3 @@
-import styles from "./Navbar.module.css";
-
 export default function Navbar() {
     const navItems = [
         { href: "/about", text: "About" },
@@ -40,11 +38,7 @@ export default function Navbar() {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-auto ms-auto header-icon">
-                        {/* <i className={styles.icon + " fa-sharp fa-solid fa-circle-play fa-2xl"}></i> */}
-                        <span class={styles.icon + " bg-dark-gray"}><i className="fa-solid fa-headphones"></i></span>
-                    </div>
-                    <div className="col-auto d-none d-lg-flex">
+                    <div className="col-auto ms-auto d-none d-lg-flex">
                         <div className="header-icon">
                             <div className="header-button ms-25px">
                                 <div className="btn border-1 btn-transparent-pink-light btn-large left-icon btn-switch-text">

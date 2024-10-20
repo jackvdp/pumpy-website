@@ -1,6 +1,6 @@
 import styles from './Artwork.module.css';
 
-export default function Artwork({currentTrack, isPlaying, handleArtworkClick}) {
+export default function Artwork({ currentTrack, isPlaying, handleArtworkClick }) {
     return (
         <div className={styles.artworkContainer} onClick={handleArtworkClick}>
             <img
@@ -9,6 +9,9 @@ export default function Artwork({currentTrack, isPlaying, handleArtworkClick}) {
                 className={styles.artwork}
                 draggable="false"
             />
+            <span className={styles.icon}>
+                <i className="fa-solid fa-play"></i>
+            </span>
             <img
                 src="/imagesNew/vinyl.png"
                 alt="Vinyl"
