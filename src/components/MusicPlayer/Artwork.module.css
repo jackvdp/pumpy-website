@@ -74,6 +74,7 @@
     color: #f97316 !important;
 }
 
-.hideOverlay .icon i {
-    opacity: 0 !important;
+.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }

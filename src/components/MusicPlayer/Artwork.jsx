@@ -9,7 +9,7 @@ export default function Artwork({ currentTrack, isPlaying, handleArtworkClick })
                 className={styles.artwork}
                 draggable="false"
             />
-            <span className={styles.icon}>
+            <span className={`${styles.icon} ${isPlaying ? styles.hidden : ''}`}>
                 <i className="fa-solid fa-play"></i>
             </span>
             <img
