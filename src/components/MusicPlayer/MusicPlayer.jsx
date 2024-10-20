@@ -34,7 +34,6 @@ const MusicPlayer = () => {
         const handleMouseLeave = () => {
             timeout = setTimeout(() => {
                 setShowControls(false);
-
             }, 2000);
         };
 
@@ -49,13 +48,18 @@ const MusicPlayer = () => {
     }, [playerState]);
 
     useEffect(() => {
-        if (isPlaying) {
+        const player = document.querySelector(`.${styles.playerContainer}`);
+        const isMouseOverPlayer = player.matches(':hover');
+
+        if (isPlaying && isMouseOverPlayer) {
             setShowControls(true);
-            setTimeout(() => {
-                setShowControls(false);
-            }, 2000);
+            if (!isMouseOverPlayer) {
+                setTimeout(() => {
+                    setShowControls(false);
+                }, 2000);
+            }
         }
-    } , [isPlaying]);
+    }, [isPlaying]);
 
     useEffect(() => {
         const handleKeyDown = (e) => {
