@@ -38,7 +38,7 @@ export default function Footer() {
                             </form>
                         </div>
                         <div className="d-flex align-items-center">
-                            <div className="d-inline-block fs-15"><i className="line-icon-Handshake me-10px align-middle icon-extra-medium"></i>Let's work together</div>
+                            <div className="d-inline-block fs-15"><i className="line-icon-Handshake me-10px align-middle icon-extra-medium"></i>Let&apos;s work together</div>
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ export default function Facts() {
                     <div className="col-12 col-lg-4 col-md-8 md-mb-50px">
                         <div className="position-sticky top-120px" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                             <p className="w-75 lg-w-100 mb-40px">Dedicated to providing personalized solutions tailored to your <span className="text-dark-gray text-decoration-line-bottom fw-600">unique business needs and goals.</span></p>
-                            <a href="/contact" className="btn btn-large btn-dark-gray btn-box-shadow">Let's talk now<i className="fa-regular fa-envelope"></i></a>
+                            <a href="/contact" className="btn btn-large btn-dark-gray btn-box-shadow">Let&apos;s talk now<i className="fa-regular fa-envelope"></i></a>
                         </div>
                     </div>
                     <div className="col-12 col-lg-8 col-md-12">

@@ -1,5 +1,4 @@
-// app/api/screenshot/route.ts
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import puppeteer from 'puppeteer';
 import path from 'path';
 import fs from 'fs/promises';

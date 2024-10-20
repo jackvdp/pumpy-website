@@ -10,7 +10,7 @@ export default function HowItWorks() {
                 <Steps />
                 <div className="row justify-content-center">
                     <div className="col-lg-12 col-md-10 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <div className="text-white fs-20">Let's build your project together. <a href="/contact" className="text-base-color text-decoration-line-bottom">Get in touch.</a></div>
+                        <div className="text-white fs-20">Let&apos;s build your project together. <a href="/contact" className="text-base-color text-decoration-line-bottom">Get in touch.</a></div>
                     </div>
                 </div>
             </div>

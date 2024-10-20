@@ -44,7 +44,7 @@ export default function Navbar() {
                                 <div className="btn border-1 btn-transparent-pink-light btn-large left-icon btn-switch-text">
                                     <span>
                                         <span><i className="fa-regular fa-envelope"></i></span>
-                                        <span className="btn-double-text" data-text="Let's talk!">Let's talk!</span>
+                                        <span className="btn-double-text" data-text="Let's talk!">Let&apos;s talk!</span>
                                     </span>
                                 </div>
                             </div>

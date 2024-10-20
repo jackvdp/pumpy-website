@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from './Controls.module.css';
 
-export default function Controls({ showControls, togglePlay, isPlaying, nextTrack, prevTrack, currentTrack }) {
+export default function Controls({ showControls, isPlaying, nextTrack, currentTrack }) {
     return (
         <div className={`${styles.controlsContainer} ${showControls ? styles.show : ''} ${isPlaying && styles.expose}`}>
 
