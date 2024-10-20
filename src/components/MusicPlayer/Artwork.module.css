@@ -78,3 +78,25 @@
     opacity: 0;
     transition: opacity 1s ease;
 }
+
+@media (max-width: 565px) {
+    .artworkContainer {
+        width: 60px;
+        height: 60px;
+    }
+
+    .vinyl {
+        width: 54px;
+        height: 54px;
+        top: 3px;
+    }
+
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .icon i {
+        font-size: 1.2rem;
+    }
+}

@@ -68,3 +68,21 @@
 .expose {
     transform: translateX(45px);
 }
+
+@media (max-width: 565px) {
+    .artist, .title {
+        font-size: 12px;
+    }
+
+    .artist {
+        margin-bottom: 6px;
+    }
+
+    .controlButton {
+        font-size: 24px;
+    }
+
+    .controlsContainer {
+        padding: 0px 0px;
+    }
+}
