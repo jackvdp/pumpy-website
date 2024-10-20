@@ -1,6 +1,6 @@
 export default function Marquee() {
     return (
-        <section className="half-section pb-0">
+        <section className="half-section pb-0 bg-white">
             <div className="container-fluid">
                 <div className="row position-relative">
                     <div className="col swiper swiper-width-auto text-center pb-20px md-pb-20px" data-slider-options='{ "slidesPerView": "auto", "spaceBetween":40, "speed": 8000, "loop": true, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>

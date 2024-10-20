@@ -4,7 +4,7 @@ import CaseStudy from "./CaseStudy"
 
 export default function CaseStudies() {
     return (
-        <section className="pb-0 overflow-hidden position-relative">
+        <section className="pb-0 overflow-hidden position-relative bg-white">
             <div className="container">
                 <div className="row align-items-center mb-5">
                     <div className="col-xl-5 lg-mb-30px text-center text-xl-start">

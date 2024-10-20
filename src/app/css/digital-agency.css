@@ -169,7 +169,7 @@ footer .footer-logo img {
     padding: 10px 15px 9px 15px;  
 }
 footer a:hover, .footer-navbar li a:hover {
-    color: var(--dark-gray);
+    color: var(--pumpyOrange);
 }
 /* media query responsive */
 @media (max-width: 1600px) {

@@ -1,6 +1,6 @@
 export default function Facts() {
     return (
-        <section>
+        <section className="bg-white">
             <div className="container">
                 <div className="row mb-3 sm-mb-0">
                     <div className="col-12 col-xxl-9 col-xl-10">

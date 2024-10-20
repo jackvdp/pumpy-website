@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="pb-0">
+        <footer className="pb-0 bg-base-color bg-sliding-line footer-sticky" style={{zIndex: "0"}}>
             <div className="container">
                 <div className="row">
                     <div className="col-12 col-xl-3 col-lg-12 col-md-6 d-flex flex-column lg-mb-30px sm-mb-20px order-md-1">
@@ -11,6 +11,7 @@ export default function Footer() {
                             <ul className="small-icon dark fw-600">
                                 <li><a className="twitter" href="https://x.com/JackVanderpump" target="_blank">Tw.</a></li>
                                 <li><a className="linkedin" href="https://www.linkedin.com/in/jack-vanderpump-3421a3105/" target="_blank">Li.</a></li>
+                                <li><a className="github" href="https://www.github.com/jackvdp" target="_blank">Gi.</a></li>
                             </ul>
                         </div>
                     </div>
@@ -43,7 +44,7 @@ export default function Footer() {
                 </div>
                 <div className="row justify-content-center align-items-center pt-5 sm-pt-35px">
                     <div className="col-12">
-                        <div className="divider-style-03 divider-style-03-01 border-color-extra-medium-gray"></div>
+                        <div className="divider-style-03 divider-style-03-01 border-color-dark-gray"></div>
                     </div>
                     <div className="col-lg-5 pt-15px pb-15px md-pt-0 fs-15 order-2 order-lg-1 text-center text-lg-start last-paragraph-no-margin"><p>© {new Date().getFullYear().toString()} Vanderpump Tech</p></div>
                     <div className="col-lg-7 pt-15px pb-15px md-pb-5px fs-15 order-1 order-lg-2 text-center text-lg-end"></div>

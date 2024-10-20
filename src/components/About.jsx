@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <section className="overflow-hidden">
+        <section className="overflow-hidden bg-white">
             <div className="container">
                 <div className="row align-items-center mb-6 sm-mb-50px">
                     <div className="col-xl-5 col-lg-5 md-mb-50px sm-mb-30px text-center text-md-start">
