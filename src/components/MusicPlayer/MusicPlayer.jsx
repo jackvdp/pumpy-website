@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext, useEffect, useState } from 'react';
+import React, { use, useContext, useEffect, useState } from 'react';
 import { MusicPlayerContext } from './MusicPlayerProvider';
 import styles from './MusicPlayer.module.css';
 import Artwork from './Artwork';
@@ -22,11 +22,40 @@ const MusicPlayer = () => {
 
     const [showControls, setShowControls] = useState(false);
 
-    const handleArtworkClick = () => {
-        if (playerState === 'stopped') {
-            togglePlay();
-        } 
-    };
+    useEffect(() => {
+        let timeout;
+        const handleMouseEnter = () => {
+            if (playerState !== 'stopped') {
+                setShowControls(true);
+                clearTimeout(timeout);
+            }
+        };
+
+        const handleMouseLeave = () => {
+            timeout = setTimeout(() => {
+                setShowControls(false);
+
+            }, 2000);
+        };
+
+        const player = document.querySelector(`.${styles.playerContainer}`);
+        player.addEventListener('mouseenter', handleMouseEnter);
+        player.addEventListener('mouseleave', handleMouseLeave);
+
+        return () => {
+            player.removeEventListener('mouseenter', handleMouseEnter);
+            player.removeEventListener('mouseleave', handleMouseLeave);
+        };
+    }, [playerState]);
+
+    useEffect(() => {
+        if (isPlaying) {
+            setShowControls(true);
+            setTimeout(() => {
+                setShowControls(false);
+            }, 2000);
+        }
+    } , [isPlaying]);
 
     useEffect(() => {
         const handleKeyDown = (e) => {
@@ -55,7 +84,12 @@ const MusicPlayer = () => {
     return (
         <div className={styles.playerContainer}>
             {currentTrack.picture && (
-                <Artwork currentTrack={currentTrack} isPlaying={isPlaying} handleArtworkClick={handleArtworkClick} />
+                <Artwork
+                    currentTrack={currentTrack}
+                    isPlaying={isPlaying}
+                    showControls={showControls}
+                    handleArtworkClick={togglePlay}
+                />
             )}
 
             <Controls

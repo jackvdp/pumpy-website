@@ -4,7 +4,7 @@
     border-radius: 8px;
     opacity: 0;
     transform: translateX(-10px);
-    transition: opacity 1s ease, transform 1s ease;
+    transition: all 1s ease;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -71,5 +71,5 @@
 
 .expose {
     transform: translateX(45px);
-    transition: transform 1s ease;
+    /* transition: transform 1s ease; */
 }
