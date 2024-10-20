@@ -8,8 +8,14 @@ const ReactPlayer = dynamic(() => import('react-player/soundcloud'), { ssr: fals
 
 export const MusicPlayerContext = createContext();
 
+export const PlayerState = Object.freeze({
+    PLAYING: 'playing',
+    PAUSED: 'paused',
+    STOPPED: 'stopped',
+});
+
 export const MusicPlayerProvider = ({ children }) => {
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [playerState, setPlayerState] = useState(PlayerState.STOPPED);
     const [playlist, setPlaylist] = useState([]);
     const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
 
@@ -18,7 +24,13 @@ export const MusicPlayerProvider = ({ children }) => {
     }, []);
 
     const togglePlay = () => {
-        setIsPlaying((prev) => !prev);
+        setPlayerState((prevState) => {
+            if (prevState === PlayerState.PLAYING) {
+                return PlayerState.PAUSED;
+            } else {
+                return PlayerState.PLAYING;
+            }
+        })
     };
 
     const nextTrack = () => {
@@ -42,7 +54,7 @@ export const MusicPlayerProvider = ({ children }) => {
     return (
         <MusicPlayerContext.Provider
             value={{
-                isPlaying,
+                playerState,
                 togglePlay,
                 nextTrack,
                 prevTrack,
@@ -63,7 +75,7 @@ export const MusicPlayerProvider = ({ children }) => {
             }}>
                 <ReactPlayer
                     url={currentTrack.trackLink}
-                    playing={isPlaying}
+                    playing={playerState === PlayerState.PLAYING}
                     onEnded={handleEnded}
                     controls={false}
                     width="100%"

@@ -8,13 +8,15 @@ import Controls from './Controls';
 
 const MusicPlayer = () => {
     const {
-        isPlaying,
+        playerState,
         togglePlay,
         nextTrack,
         prevTrack,
         playlist,
         currentTrackIndex
     } = useContext(MusicPlayerContext);
+
+    const isPlaying = playerState === 'playing';
 
     const currentTrack = playlist[currentTrackIndex] || {};
 
