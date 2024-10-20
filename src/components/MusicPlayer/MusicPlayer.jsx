@@ -1,6 +1,6 @@
 "use client";
 
-import React, { use, useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { MusicPlayerContext } from './MusicPlayerProvider';
 import styles from './MusicPlayer.module.css';
 import Artwork from './Artwork';
