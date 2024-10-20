@@ -13,29 +13,7 @@ export default function Controls({ showControls, togglePlay, isPlaying, nextTrac
             </div>
 
             <div className={styles.controls}>
-                <button
-                    onClick={prevTrack}
-                    className={`${styles.controlButton} ${styles.small}`}
-                    aria-label="Previous Track"
-                >
-                    <i className="bi bi-rewind-fill"></i>
-                </button>
-
-                <button
-                    onClick={togglePlay}
-                    className={styles.controlButton}
-                    aria-label={isPlaying ? 'Pause' : 'Play'}
-                >
-                    <i className={`bi ${isPlaying ? 'bi-pause-fill' : 'bi-play-fill'} ${styles.alignBottomOfContainer}`}></i>
-                </button>
-
-                <button
-                    onClick={nextTrack}
-                    className={`${styles.controlButton} ${styles.small}`}
-                    aria-label="Next Track"
-                >
-                    <i className="bi bi-fast-forward-fill"></i>
-                </button>
+                <i onClick={nextTrack} className={`${styles.controlButton} bi bi-skip-forward-fill`}></i>
             </div>
         </div>
     );

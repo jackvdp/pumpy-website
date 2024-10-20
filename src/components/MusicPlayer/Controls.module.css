@@ -18,21 +18,16 @@
 
 .controls {
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 .controlButton {
     background: none;
     color: #fff;
-    font-size: 48px;
+    font-size: 30px;
     cursor: pointer;
     margin-right: 10px;
-    transition: transform 0.5s ease;
     border: none;
-}
-
-.small {
-    font-size: 30px !important;
 }
 
 .controlButton:hover {
@@ -63,6 +58,7 @@
     font-size: 14px;
     color: #fff;
     line-height: normal;
+    margin-bottom: 10px;
 }
 
 .alignBottomOfContainer {
@@ -71,5 +67,4 @@
 
 .expose {
     transform: translateX(45px);
-    /* transition: transform 1s ease; */
 }

@@ -9,8 +9,8 @@ export default function Artwork({ currentTrack, isPlaying, showControls, handleA
                 className={styles.artwork}
                 draggable="false"
             />
-            <span className={`${styles.icon} ${isPlaying || showControls ? styles.hidden : ''}`}>
-                <i className="fa-solid fa-play"></i>
+            <span className={`${styles.icon} ${isPlaying && !showControls ? styles.hidden : ''}`}>
+                <i className={"fa-solid " + (isPlaying ? "fa-pause" : "fa-play")}></i>
             </span>
             <img
                 src="/imagesNew/vinyl.png"
