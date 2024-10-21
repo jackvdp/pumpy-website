@@ -4,7 +4,7 @@ export default function Parallax() {
     return (
         <section className="big-section" data-parallax-background-ratio="0.5" style={{ backgroundImage: "url(/imagesNew/codebg.webp)" }}>
             <div className="container">
-                <div className="row mt-10 mb-10">
+                <div className="row ">
                     <div className="col-12 col-xxl-7 col-xl-8">
                         <h2
                             className="text-dark-gray text-white alt-font fw-500 ls-minus-2px w-95 md-w-100"
