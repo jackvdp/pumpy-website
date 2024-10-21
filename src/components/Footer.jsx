@@ -1,11 +1,11 @@
 export default function Footer() {
     return (
-        <footer className="pb-0 bg-base-color bg-sliding-line footer-sticky" style={{zIndex: "0"}}>
+        <footer className="pb-0 bg-base-color bg-sliding-line footer-sticky" style={{ zIndex: "0" }}>
             <div className="container">
                 <div className="row">
                     <div className="col-12 col-xl-3 col-lg-12 col-md-6 d-flex flex-column lg-mb-30px sm-mb-20px order-md-1">
                         <a href="/" className="footer-logo d-inline-block lg-mb-30px">
-                        <img src="imagesNew/logo.png" alt="" className="default-logo" />
+                            <img src="imagesNew/logo.webp" alt="" className="default-logo" />
                         </a>
                         <div className="elements-social social-text-style-01 mt-auto">
                             <ul className="small-icon dark fw-600">
@@ -17,10 +17,10 @@ export default function Footer() {
                     </div>
                     <div className="col-12 col-xl-3 col-lg-4 col-md-6 last-paragraph-no-margin order-lg-2 order-md-3 sm-mb-20px">
                         <span className="fs-14 fw-600 d-block text-dark-gray text-dark-gray text-uppercase">Quick Links</span>
-                        <a href="/">About</a><br/>
-                        <a href="/">Services</a><br/>
-                        <a href="/">Case Studies</a><br/>
-                        <a href="/">Music</a><br/>
+                        <a href="/">About</a><br />
+                        <a href="/">Services</a><br />
+                        <a href="/">Case Studies</a><br />
+                        <a href="/">Music</a><br />
                         <a href="/">Contact</a>
                     </div>
                     <div className="col-12 col-xl-3 col-lg-4 col-md-6 last-paragraph-no-margin order-md-4 sm-mb-30px">

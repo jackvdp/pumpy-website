@@ -13,9 +13,9 @@ export default function Navbar() {
                 <div className="container-fluid">
                     <div className="col-auto">
                         <a className="navbar-brand" href="/">
-                            <img src="imagesNew/logo.png" alt="" className="default-logo" />
-                            <img src="imagesNew/logo.png" alt="" className="alt-logo" />
-                            <img src="imagesNew/logo.png" alt="" className="mobile-logo" />
+                            <img src="imagesNew/logo.webp" alt="" className="default-logo" />
+                            <img src="imagesNew/logo.webp" alt="" className="alt-logo" />
+                            <img src="imagesNew/logo.webp" alt="" className="mobile-logo" />
                         </a>
                     </div>
                     <div className="col-auto menu-order">
