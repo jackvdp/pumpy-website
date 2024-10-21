@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 export default function Logos() {
     const logosData = [
-        { src: "imagesNew/logos/dbt.png", link: "#", height: "h-50px" },
-        { src: "imagesNew/logos/elev8.webp", link: "#", height: "h-45px" },
-        { src: "imagesNew/logos/gigabyte.svg", link: "#", height: "h-30px" },
-        { src: "imagesNew/logos/icps.png", link: "#", height: "h-45px" },
-        { src: "imagesNew/logos/met.svg", link: "#", height: "h-25px" }
+        { src: "/imagesNew/logos/dbt.webp", link: "#", height: 50 },
+        { src: "/imagesNew/logos/elev8.webp", link: "#", height: 45 },
+        { src: "/imagesNew/logos/gigabyte.svg", link: "#", height: 30 },
+        { src: "/imagesNew/logos/icps.webp", link: "#", height: 45 },
+        { src: "/imagesNew/logos/met.svg", link: "#", height: 25 }
     ];
 
     return (
@@ -14,11 +16,17 @@ export default function Logos() {
                     {logosData.map((logo, index) => (
                         <div key={index} className="col client-box text-center md-mb-40px">
                             <a href={logo.link}>
-                                <img 
-                                src={logo.src}
-                                style={{ filter: 'brightness(0) saturate(100%)' }}
-                                className={logo.height} 
-                                alt="" 
+                                <Image
+                                    src={logo.src}
+                                    alt=""
+                                    width={100}
+                                    height={logo.height}
+                                    style={{
+                                        filter: 'brightness(0) saturate(100%)',
+                                        width: 'auto',
+                                        height: `${logo.height}px`
+                                    }}
+                                    className="object-contain"
                                 />
                             </a>
                         </div>
