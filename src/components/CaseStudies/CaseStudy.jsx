@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function CaseStudy(item) {
     return (
         <li key={item.id} className={`grid-item ${item.className} transition-inner-all`} data-atropos data-atropos-perspective="1450">
@@ -8,7 +10,7 @@ export default function CaseStudy(item) {
                         <div className="atropos-inner" data-atropos-offset="3">
                             <div className={`portfolio-box bg-pumpy-orange foo`}>
                                 <div className="portfolio-image">
-                                    <img src={item.imgSrc} alt="" />
+                                    <Image height={1152} width={720} src={item.imgSrc} alt="" />
                                 </div>
                                 <div className="portfolio-hover justify-content-end align-items-center d-flex flex-column pt-40px pb-40px sm-pt-30px sm-pb-30px">
                                     <span className="icon-box z-index-1 mb-auto ms-auto me-30px"><i className="bi bi-arrow-up-right icon-very-medium text-white" aria-hidden="true"></i></span>
