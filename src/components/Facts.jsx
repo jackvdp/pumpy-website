@@ -4,7 +4,7 @@ export default function Facts() {
             <div className="container">
                 <div className="row mb-3 sm-mb-0">
                     <div className="col-12 col-xxl-9 col-xl-10">
-                        <h2 className="text-dark-gray fw-600 alt-font ls-minus-3px w-95 md-w-100 highlight-separator-small">Combining technical knowledge with user-centric design to deliver websites and apps that <span className="highlight-separator mb-0 pb-0" data-shadow-animation="true" data-animation-delay="500"> engage <span><img src="imagesNew/highlight-separator.png" alt="" /></span></span> and convert.</h2>
+                        <h2 className="text-dark-gray fw-600 alt-font ls-minus-3px w-95 md-w-100 highlight-separator-small">Combining technical knowledge with user-centric design to deliver websites and apps that <span className="highlight-separator mb-0 pb-0" data-shadow-animation="true" data-animation-delay="500"> engage <span><img src="imagesNew/highlight-separator.webp" alt="" /></span></span> and convert.</h2>
                     </div>
                 </div>
                 <div className="row mb-3 md-mb-0">

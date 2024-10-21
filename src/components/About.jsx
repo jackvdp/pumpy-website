@@ -4,7 +4,7 @@ export default function About() {
             <div className="container">
                 <div className="row align-items-center mb-6 sm-mb-50px">
                     <div className="col-xl-5 col-lg-5 md-mb-50px sm-mb-30px text-center text-md-start">
-                        <h2 className="text-dark-gray fw-600 ls-minus-3px mb-0 alt-font highlight-separator-small">Creating websites & mobile apps that work for <span className="highlight-separator mb-0 pb-0" data-shadow-animation="true" data-animation-delay="500">you.<span><img src="imagesNew/highlight-separator.png" alt="" /></span></span></h2>
+                        <h2 className="text-dark-gray fw-600 ls-minus-3px mb-0 alt-font highlight-separator-small">Creating websites & mobile apps that work for <span className="highlight-separator mb-0 pb-0" data-shadow-animation="true" data-animation-delay="500">you.<span><img src="imagesNew/highlight-separator.webp" alt="" /></span></span></h2>
                     </div>
                     <div className="col-xl-6 col-lg-7 offset-xl-1 last-paragraph-no-margin">
                         <div className="row align-items-center">

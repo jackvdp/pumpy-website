@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Hero() {
     return (
         <section className="bg-base-color bg-sliding-line p-0 full-screen ipad-top-space-margin position-relative overflow-hidden sm-h-auto">
@@ -10,7 +12,7 @@ export default function Hero() {
                         <div className="separator-line h-120px w-2px bg-dark-gray position-absolute bottom-0px right-80px sm-right-60px"></div>
                         <div className="fs-140 xxl-fs-100 sm-fs-60 lh-95 fw-600 text-dark-gray mb-50px sm-mb-30px alt-font ls-minus-8px sm-ls-minus-2px" data-anime='{ "el": "childs", "translateX": [80, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                             <div className="d-inline-block position-relative z-index-9">
-                                <div className="highlight-separator mb-0" data-shadow-animation="true" data-animation-delay="1000">Digital<span><img src="imagesNew/highlight-separator.png" alt="" /></span></div> solutions
+                                <div className="highlight-separator mb-0" data-shadow-animation="true" data-animation-delay="1000">Digital<span><Image fill src="/imagesNew/highlight-separator.webp" alt="" /></span></div> solutions
                             </div>
                         </div>
                         <div className="fs-20 sm-fs-18 text-dark-gray mb-20px w-70 xxl-w-100 lg-w-100 sm-w-90 d-block" data-anime='{ "el": "childs", "translateX": [110, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -36,7 +38,7 @@ export default function Hero() {
                             </div>
                             <div data-anime='{ "effect": "slide", "color": "#f97316", "direction":"lr", "easing": "easeOutQuad", "delay":50}'>
                                 <div className="fancy-text-style-3 mt-30px">
-                                    <h4 className="lh-40 alt-font text-dark-gray fw-600 ls-minus-2px image-mask cover-background mb-0" style={{ backgroundImage: "url('imagesNew/hero/hero4.png')" }}>Building your digital presence together.</h4>
+                                    <h4 className="lh-40 alt-font text-dark-gray fw-600 ls-minus-2px image-mask cover-background mb-0" style={{ backgroundImage: "url('imagesNew/hero/hero4.webp')" }}>Building your digital presence together.</h4>
                                 </div>
                             </div>
                         </div>
@@ -44,15 +46,15 @@ export default function Hero() {
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
                                     <div className="position-absolute left-0px top-0px w-100 h-100 cover-background"
-                                        style={{ backgroundImage: "url('imagesNew/hero/hero1.png')" }}></div>
+                                        style={{ backgroundImage: "url('imagesNew/hero/hero1.webp')" }}></div>
                                 </div>
                                 <div className="swiper-slide">
                                     <div className="position-absolute left-0px top-0px w-100 h-100 cover-background"
-                                        style={{ backgroundImage: "url('imagesNew/hero/hero2.png')" }}></div>
+                                        style={{ backgroundImage: "url('imagesNew/hero/hero2.webp')" }}></div>
                                 </div>
                                 <div className="swiper-slide">
                                     <div className="position-absolute left-0px top-0px w-100 h-100 cover-background"
-                                        style={{ backgroundImage: "url('imagesNew/hero/hero3.png')" }}></div>
+                                        style={{ backgroundImage: "url('imagesNew/hero/hero3.webp')" }}></div>
                                 </div>
                             </div>
                             <div className="slider-one-slide-prev-1 icon-very-small text-white swiper-button-prev slider-navigation-style-06 d-none d-sm-inline-block"><i className="line-icon-Arrow-OutLeft icon-extra-large"></i></div>
