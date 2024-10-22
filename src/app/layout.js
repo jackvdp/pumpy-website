@@ -7,6 +7,7 @@ import MusicPlayer from "@/components/MusicPlayer/MusicPlayer"
 import { MusicPlayerProvider } from "@/components/MusicPlayer/MusicPlayerProvider"
 import CustomCursor from "@/components/CustomCursor"
 import ScrollIndicator from "@/components/ScrollIndicator"
+import Script from "next/script"
 
 export const metadata = {
   title: "Vanderpump Tech | Web & App Development",
@@ -35,6 +36,9 @@ export default function RootLayout({ children }) {
           <ScrollIndicator />
           <MusicPlayer />
         </MusicPlayerProvider>
+        <Script src="/js/jquery.js" />
+        <Script src="/js/vendors.js" />
+        <Script src="/js/main.js" />
       </body>
     </html>
   );

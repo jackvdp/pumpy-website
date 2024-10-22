@@ -9,8 +9,7 @@ import CaseStudies from "@/components/CaseStudies";
 import Parallax from "@/components/Parallax";
 import Facts from "@/components/Facts";
 import Marquee from "@/components/Marquee";
-import Footer from "@/components/Footer"
-import Script from "next/script"
+import Footer from "@/components/Footer";
 
 export default function Home() {
 
@@ -28,9 +27,6 @@ export default function Home() {
         <Marquee />
       </MainWrapper>
       <Footer />
-      <Script src="/js/jquery.js" />
-      <Script src="/js/vendors.js" />
-      <Script src="/js/main.js" />
     </>
   );
 }
