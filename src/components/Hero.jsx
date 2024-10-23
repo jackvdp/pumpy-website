@@ -31,7 +31,7 @@ export default function Hero() {
                             </a>
                         </div>
                     </div>
-                    <div className="col-12 col-md-5 position-relative order-1 order-md-2">
+                    {/* <div className="col-12 col-md-5 position-relative order-1 order-md-2">
                         <div className="position-absolute left-0px bottom-0px bg-white z-index-9 p-65px md-p-40px w-360px d-none d-md-block">
                             <div className="position-absolute right-30px top-30px">
                                 <i className="feather icon-feather-arrow-up-right icon-extra-medium text-dark-gray"></i>
@@ -61,7 +61,7 @@ export default function Hero() {
                             <div className="slider-one-slide-next-1 icon-very-small text-white swiper-button-next slider-navigation-style-06 d-none d-sm-inline-block"><i className="line-icon-Arrow-OutRight icon-extra-large"></i></div>
 
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
