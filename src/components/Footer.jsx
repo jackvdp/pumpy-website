@@ -1,3 +1,7 @@
+"use client"
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
 export default function Footer() {
     return (
         <footer className="pb-0 bg-base-color bg-sliding-line footer-sticky" style={{ zIndex: "0" }}>
@@ -27,20 +31,7 @@ export default function Footer() {
                         <span className="fs-14 fw-600 d-block text-dark-gray text-dark-gray text-uppercase">Contact</span>
                         <a href="mailto:jack@vanderpump.tech" className="text-dark-gray text-decoration-line-bottom fw-600 mb-50px sm-mb-30px d-inline-block">jack@vanderpump.tech</a>
                     </div>
-                    <div className="col-12 col-lg-3 col-xl-3 col-lg-4 col-md-6 order-lg-4 order-md-2 md-mb-30px sm-mb-0">
-                        <span className="fs-14 fw-600 d-block text-dark-gray mb-15px text-dark-gray text-uppercase">Get in touch</span>
-                        <div className="d-inline-block w-100 newsletter-style-02 position-relative mb-10px">
-                            <form action="email-templates/subscribe-newsletter.php" method="post" className="position-relative w-100">
-                                <input className="input-small border-color-extra-medium-gray w-100 form-control required" type="email" name="email" placeholder="Enter your email..." />
-                                <input type="hidden" name="redirect" value="" />
-                                <button type="submit" className="btn submit" aria-label="submit"><i className="icon bi bi-envelope icon-small text-dark-gray"></i></button>
-                                <div className="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none"></div>
-                            </form>
-                        </div>
-                        <div className="d-flex align-items-center">
-                            <div className="d-inline-block fs-15"><i className="line-icon-Handshake me-10px align-middle icon-extra-medium"></i>Let&apos;s work together</div>
-                        </div>
-                    </div>
+                    <ContactForm />
                 </div>
                 <div className="row justify-content-center align-items-center pt-5 sm-pt-35px">
                     <div className="col-12">
@@ -52,4 +43,53 @@ export default function Footer() {
             </div>
         </footer>
     )
+}
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm("mzzbzqjz");
+
+  return (
+    <div className="col-12 col-lg-3 col-xl-3 col-lg-4 col-md-6 order-lg-4 order-md-2 md-mb-30px sm-mb-0">
+      <span className="fs-14 fw-600 d-block text-dark-gray mb-15px text-dark-gray text-uppercase">
+        Get in touch
+      </span>
+      <div className="d-inline-block w-100 newsletter-style-02 position-relative mb-10px">
+        {state.succeeded ? (
+          <div className="border-radius-4px pt-15px pb-15px ps-15px pe-15px w-100 text-center bg-success-subtle">
+            <i className="bi bi-check-circle me-2"></i>
+            <span className="fs-14 text-success">We&apos;ll be in touch!</span>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="position-relative w-100">
+            <input 
+              className="input-small border-color-extra-medium-gray w-100 form-control required" 
+              type="email" 
+              name="email" 
+              placeholder="Enter your email..." 
+            />
+            <button 
+              type="submit" 
+              className="btn" 
+              aria-label="submit"
+              disabled={state.submitting}
+            >
+              <i className="icon bi bi-envelope icon-small text-dark-gray"></i>
+            </button>
+            <ValidationError 
+              prefix="Email" 
+              field="email"
+              errors={state.errors}
+              className="border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center text-danger"
+            />
+          </form>
+        )}
+      </div>
+      <div className="d-flex align-items-center">
+        <div className="d-inline-block fs-15">
+          <i className="line-icon-Handshake me-10px align-middle icon-extra-medium"></i>
+          Let&apos;s work together
+        </div>
+      </div>
+    </div>
+  );
 }

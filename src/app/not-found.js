@@ -1,6 +1,9 @@
+"use client"
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MainWrapper from "@/components/MainWrapper";
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function NotFoundPage() {
     return (
@@ -17,14 +20,7 @@ export default function NotFoundPage() {
                                 </a>
                                 <h1 className="fw-700 fs-70 mb-10px text-dark-gray ls-minus-2px mb-5">Coming soon!</h1>
                                 <div className="d-inline-block w-100 newsletter-style-03 position-relative mb-8 lg-mb-15 md-mb-6">
-                                    <form action="email-templates/subscribe-newsletter.php" method="post" className="position-relative lg-w-100 w-80 mx-auto">
-                                        <div className="position-relative">
-                                            <input className="input-large bg-white border-color-transparent w-100 border-radius-5px box-shadow-extra-large form-control required" type="email" name="email" placeholder="Enter your email address" />
-                                            <input type="hidden" name="redirect" value="" />
-                                            <button className="btn btn-extra-large text-dark-gray ls-0px left-icon submit text-transform-none fw-600" aria-label="submit"><i className="icon feather icon-feather-mail icon-small align-middle"></i><span>Let&apos;s talk!</span></button>
-                                        </div>
-                                        <div className="form-results border-radius-100px mt-15px p-15px fs-15 w-100 text-center d-none"></div>
-                                    </form>
+                                    <ContactForm />
                                 </div>
                             </div>
                         </div>
@@ -34,5 +30,27 @@ export default function NotFoundPage() {
             <Footer />
         </>
 
+    )
+}
+
+function ContactForm() {
+    const [state, handleSubmit] = useForm("mzzbzqjz");
+
+    return (
+        <>
+            {state.succeeded ? (
+                <div className="border-radius-4px pt-15px pb-15px ps-15px pe-15px w-100 text-center bg-success-subtle">
+                    <i className="bi bi-check-circle me-2"></i>
+                    <span className="fs-14 text-success">We&apos;ll be in touch!</span>
+                </div>
+            ) : (<form onSubmit={handleSubmit} className="position-relative lg-w-100 w-80 mx-auto">
+                <div className="position-relative">
+                    <input className="input-large bg-white border-color-transparent w-100 border-radius-5px box-shadow-extra-large form-control required" type="email" name="email" placeholder="Enter your email address" />
+                    <input type="hidden" name="redirect" value="" />
+                    <button className="btn btn-extra-large text-dark-gray ls-0px left-icon text-transform-none fw-600"><i className="icon feather icon-feather-mail icon-small align-middle"></i><span>Let&apos;s talk!</span></button>
+                </div>
+                <div className="form-results border-radius-100px mt-15px p-15px fs-15 w-100 text-center d-none"></div>
+            </form>)}
+        </>
     )
 }
