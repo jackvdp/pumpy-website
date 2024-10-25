@@ -87,6 +87,7 @@ function ImagesSlider() {
         <Image
           fill
           priority
+          loading="eager"
           className="position-absolute left-0px top-0px w-100 h-100 object-cover"
           src='/imagesNew/hero/hero1.webp'
           alt="code"
