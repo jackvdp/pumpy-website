@@ -10,6 +10,7 @@ import Parallax from "@/components/Parallax";
 import Facts from "@/components/Facts";
 import Marquee from "@/components/Marquee";
 import Footer from "@/components/Footer";
+import MainWrapper from "@/components/MainWrapper";
 
 export default function Home() {
 
@@ -28,18 +29,5 @@ export default function Home() {
       </MainWrapper>
       <Footer />
     </>
-  );
-}
-
-
-function MainWrapper({ children }) {
-  return (
-    <main style={{
-      position: 'relative',
-      zIndex: 1,
-      minHeight: '100vh',
-    }}>
-      {children}
-    </main>
   );
 }
