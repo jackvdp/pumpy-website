@@ -20,9 +20,11 @@ export default function Artwork({ currentTrack, isPlaying, showControls, handleA
                 draggable="false"
                 onLoadingComplete={handleImageLoad}
             />
-            <span className={`${styles.icon} ${isPlaying && !showControls ? styles.hidden : ''}`}>
-                <i className={"fa-solid " + (isPlaying ? "fa-pause" : "fa-play")}></i>
-            </span>
+            <div className={(isPlaying && !showControls) ? ` ${styles.hidden}` : ''}>
+                <span className={styles.icon}>
+                    <i className={"fa-solid " + (isPlaying ? "fa-pause" : "fa-play")}></i>
+                </span>
+            </div>
             <Image
                 src="/imagesNew/vinyl.webp"
                 alt="Vinyl"
