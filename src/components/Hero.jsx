@@ -43,7 +43,7 @@ export default function Hero() {
                                 <i className="feather icon-feather-arrow-up-right icon-extra-medium text-dark-gray"></i>
                             </div>
                             <div
-                            data-anime='{ "effect": "slide", "color": "#f97316", "direction":"lr", "easing": "easeOutQuad", "delay":50}'
+                                data-anime='{ "effect": "slide", "color": "#f97316", "direction":"lr", "easing": "easeOutQuad", "delay":50}'
                             >
                                 <div className="fancy-text-style-3 mt-30px">
                                     <h4 className="lh-40 alt-font text-dark-gray fw-600 ls-minus-2px image-mask cover-background mb-0" style={{ backgroundImage: "url('imagesNew/hero/hero4.webp')" }}>Building your digital presence together.</h4>
@@ -53,16 +53,16 @@ export default function Hero() {
                         <div className="swiper h-100 banner-slider sm-h-450px swiper-light-pagination" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "stopOnLastSlide": true, "disableOnInteraction": false },"keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'>
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
-                                    <div className="position-absolute left-0px top-0px w-100 h-100 cover-background"
-                                        style={{ backgroundImage: "url('imagesNew/hero/hero1.webp')" }}></div>
+                                    <Image fill className="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                                        src='/imagesNew/hero/hero2.webp' />
                                 </div>
                                 <div className="swiper-slide">
-                                    <div className="position-absolute left-0px top-0px w-100 h-100 cover-background"
-                                        style={{ backgroundImage: "url('imagesNew/hero/hero2.webp')" }}></div>
+                                    <Image fill className="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                                        src='/imagesNew/hero/hero1.webp' />
                                 </div>
                                 <div className="swiper-slide">
-                                    <div className="position-absolute left-0px top-0px w-100 h-100 cover-background"
-                                        style={{ backgroundImage: "url('imagesNew/hero/hero3.webp')" }}></div>
+                                    <Image fill className="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                                        src='/imagesNew/hero/hero3.webp' />
                                 </div>
                             </div>
                             <div className="slider-one-slide-prev-1 icon-very-small text-white swiper-button-prev slider-navigation-style-06 d-none d-sm-inline-block"><i className="line-icon-Arrow-OutLeft icon-extra-large"></i></div>
