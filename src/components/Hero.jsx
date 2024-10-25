@@ -50,7 +50,7 @@ export default function Hero() {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="swiper h-100 banner-slider sm-h-450px swiper-light-pagination" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "stopOnLastSlide": true, "disableOnInteraction": false },"keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'>
+                        <div className="swiper h-100 banner-slider sm-h-450px swiper-light-pagination" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "stopOnLastSlide": true, "disableOnInteraction": false },"keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'>
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
                                     <div className="position-absolute left-0px top-0px w-100 h-100 cover-background"
@@ -68,7 +68,7 @@ export default function Hero() {
                             <div className="slider-one-slide-prev-1 icon-very-small text-white swiper-button-prev slider-navigation-style-06 d-none d-sm-inline-block"><i className="line-icon-Arrow-OutLeft icon-extra-large"></i></div>
                             <div className="slider-one-slide-next-1 icon-very-small text-white swiper-button-next slider-navigation-style-06 d-none d-sm-inline-block"><i className="line-icon-Arrow-OutRight icon-extra-large"></i></div>
 
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>
