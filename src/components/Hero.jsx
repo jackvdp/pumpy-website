@@ -38,7 +38,7 @@ export default function Hero() {
                             </a>
                         </div>
                     </div>
-                    <div className="col-12 col-md-5 position-relative order-1 order-md-2">
+                    <div className="col-12 col-md-5 position-relative order-2 order-md-2">
                         <div className="position-absolute left-0px bottom-0px bg-white z-index-9 p-65px md-p-40px w-360px d-none d-md-block">
                             <div className="position-absolute right-30px top-30px">
                                 <i className="feather icon-feather-arrow-up-right icon-extra-medium text-dark-gray"></i>
