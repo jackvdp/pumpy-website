@@ -11,7 +11,7 @@ export default function Hero() {
                         </div>
                         <div className="separator-line h-120px w-2px bg-dark-gray position-absolute bottom-0px right-80px sm-right-60px"></div>
                         <div className="fs-140 xxl-fs-100 sm-fs-60 lh-95 fw-600 text-dark-gray mb-50px sm-mb-30px alt-font ls-minus-8px sm-ls-minus-2px"
-                            data-anime='{ "el": "childs", "translateX": [80, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'
+                            // data-anime='{ "el": "childs", "translateX": [80, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'
                         >
                             <div className="d-inline-block position-relative z-index-9">
                                 <div className="highlight-separator mb-0" data-shadow-animation="true" data-animation-delay="1000">Digital<span><Image fill src="/imagesNew/highlight-separator.webp" alt="" /></span></div> solutions
