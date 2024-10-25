@@ -58,6 +58,7 @@ export default function Hero() {
                                         loading="eager"
                                         className="position-absolute left-0px top-0px w-100 h-100 cover-background"
                                         src='/imagesNew/hero/hero3.webp'
+                                        alt="code"
                                     />
                                 </div>
                                 <div className="swiper-slide">
@@ -65,6 +66,7 @@ export default function Hero() {
                                         fill
                                         className="position-absolute left-0px top-0px w-100 h-100 cover-background"
                                         src='/imagesNew/hero/hero2.webp'
+                                        alt="stickies"
                                     />
                                 </div>
                                 <div className="swiper-slide">
@@ -72,6 +74,7 @@ export default function Hero() {
                                         fill
                                         className="position-absolute left-0px top-0px w-100 h-100 cover-background"
                                         src='/imagesNew/hero/hero1.webp'
+                                        alt="laptop"
                                     />
                                 </div>
                             </div>
