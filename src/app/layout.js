@@ -31,6 +31,15 @@ export const metadata = {
       },
     ],
   },
+  other: {
+    'link': [
+      {
+        rel: 'preload',
+        as: 'image',
+        href: '/imagesNew/hero/hero1.webp',
+      }
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {
