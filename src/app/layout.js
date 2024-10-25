@@ -8,7 +8,6 @@ import { MusicPlayerProvider } from "@/components/MusicPlayer/MusicPlayerProvide
 import CustomCursor from "@/components/CustomCursor"
 import ScrollIndicator from "@/components/ScrollIndicator"
 import Script from "next/script"
-import Head from "next/head"
 
 export const metadata = {
   title: "Vanderpump Tech | Web & App Development",
