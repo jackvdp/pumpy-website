@@ -53,16 +53,26 @@ export default function Hero() {
                         <div className="swiper h-100 banner-slider sm-h-450px swiper-light-pagination" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 8000, "stopOnLastSlide": true, "disableOnInteraction": false },"keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'>
                             <div className="swiper-wrapper">
                                 <div className="swiper-slide">
-                                    <Image fill className="position-absolute left-0px top-0px w-100 h-100 cover-background"
-                                        src='/imagesNew/hero/hero3.webp' />
+                                    <Image
+                                        fill
+                                        loading="eager"
+                                        className="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                                        src='/imagesNew/hero/hero3.webp'
+                                    />
                                 </div>
                                 <div className="swiper-slide">
-                                    <Image fill className="position-absolute left-0px top-0px w-100 h-100 cover-background"
-                                        src='/imagesNew/hero/hero2.webp' />
+                                    <Image
+                                        fill
+                                        className="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                                        src='/imagesNew/hero/hero2.webp'
+                                    />
                                 </div>
                                 <div className="swiper-slide">
-                                    <Image fill className="position-absolute left-0px top-0px w-100 h-100 cover-background"
-                                        src='/imagesNew/hero/hero1.webp' />
+                                    <Image
+                                        fill
+                                        className="position-absolute left-0px top-0px w-100 h-100 cover-background"
+                                        src='/imagesNew/hero/hero1.webp'
+                                    />
                                 </div>
                             </div>
                             <div className="slider-one-slide-prev-1 icon-very-small text-white swiper-button-prev slider-navigation-style-06 d-none d-sm-inline-block"><i className="line-icon-Arrow-OutLeft icon-extra-large"></i></div>
