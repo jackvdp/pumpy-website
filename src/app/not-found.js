@@ -21,7 +21,7 @@ export default function NotFoundPage() {
                                         <div className="position-relative">
                                             <input className="input-large bg-white border-color-transparent w-100 border-radius-5px box-shadow-extra-large form-control required" type="email" name="email" placeholder="Enter your email address" />
                                             <input type="hidden" name="redirect" value="" />
-                                            <button className="btn btn-extra-large text-dark-gray ls-0px left-icon submit text-transform-none fw-600" aria-label="submit"><i className="icon feather icon-feather-mail icon-small align-middle"></i><span>Let's talk</span></button>
+                                            <button className="btn btn-extra-large text-dark-gray ls-0px left-icon submit text-transform-none fw-600" aria-label="submit"><i className="icon feather icon-feather-mail icon-small align-middle"></i><span>Let&apos;s talk!</span></button>
                                         </div>
                                         <div className="form-results border-radius-100px mt-15px p-15px fs-15 w-100 text-center d-none"></div>
                                     </form>
