@@ -60,9 +60,9 @@ export default function RootLayout({ children }) {
           <ScrollIndicator />
           <MusicPlayer />
         </MusicPlayerProvider>
-        <Script src="/js/jquery.js" />
-        <Script src="/js/vendors.js" />
-        <Script src="/js/main.js" />
+        <Script src="/js/jquery.js" strategy="beforeInteractive" />
+        <Script src="/js/vendors.js" strategy="beforeInteractive" />
+        <Script src="/js/main.js" strategy="afterInteractive" />
       </body>
     </html>
   );
