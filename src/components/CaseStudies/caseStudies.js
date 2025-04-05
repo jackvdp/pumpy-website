@@ -68,7 +68,7 @@ const caseStudies = [
         className: "backend",
         link: "https://www.gov.uk/government/organisations/department-for-business-and-trade",
         imgSrc: "/imagesNew/casestudies/dbt.webp",
-        title: "Department of Business & Trade",
+        title: "Department for Business & Trade",
         subtitle: "Government"
     }
 ];
