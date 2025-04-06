@@ -46,6 +46,18 @@
     width: 100%;
 }
 
+.button-link {
+    color: black;
+}
+
+.button-link:hover {
+    color: var(--pumpyOrange);
+}
+
+.button-box:hover .button-link {
+    color: var(--pumpyOrange);
+}
+
 /* custom cursor */
 @media (hover: hover) and (pointer: fine) {
     .custom-cursor .circle-cursor-outer {
