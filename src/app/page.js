@@ -14,20 +14,20 @@ import MainWrapper from "@/components/MainWrapper";
 
 export default function Home() {
 
-  return (
-    <>
-      <MainWrapper>
-        <Navbar />
-        <Hero />
-        <Logos />
-        <About />
-        <HowItWorks />
-        <CaseStudies />
-        <Facts />
-        <Parallax />
-        <Marquee />
-      </MainWrapper>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <MainWrapper>
+                <Navbar/>
+                <Hero/>
+                <Logos/>
+                <About/>
+                <HowItWorks/>
+                <CaseStudies/>
+                <Facts/>
+                <Parallax/>
+                <Marquee/>
+            </MainWrapper>
+            <Footer sticky/>
+        </>
+    );
 }
