@@ -11,7 +11,7 @@ const caseStudies = [
         id: 2,
         className: "mobile backend",
         link: "#",
-        imgSrc: "/imagesNew/casestudies/met.webp",
+        imgSrc: "/imagesNew/casestudies/metoffice.jpg",
         title: "Met Office",
         subtitle: "Government"
     },
@@ -27,7 +27,7 @@ const caseStudies = [
         id: 4,
         className: "mobile",
         link: "https://vanderpump.tech/music",
-        imgSrc: "/imagesNew/casestudies/pumpy.webp",
+        imgSrc: "/imagesNew/casestudies/pumpymusic1.png",
         title: "Pumpy Music",
         subtitle: "Music Tech"
     },
@@ -35,7 +35,7 @@ const caseStudies = [
         id: 5,
         className: "web backend",
         link: "https://electoralnetwork.org",
-        imgSrc: "/imagesNew/casestudies/electoral.webp",
+        imgSrc: "/imagesNew/casestudies/electoral.png",
         title: "Electoral Network",
         subtitle: "Government"
     },
@@ -50,10 +50,10 @@ const caseStudies = [
     {
         id: 7,
         className: "web",
-        link: "https://professional.parlicentre.org",
-        imgSrc: "/imagesNew/casestudies/professional.webp",
-        title: "ICPS Professionals Network",
-        subtitle: "Government"
+        link: "https://xtraloftspace.com",
+        imgSrc: "/imagesNew/casestudies/xtraloft.png",
+        title: "Xtra Loft Space",
+        subtitle: "Construction"
     },
     {
         id: 8,
@@ -67,7 +67,7 @@ const caseStudies = [
         id: 9,
         className: "backend",
         link: "https://www.gov.uk/government/organisations/department-for-business-and-trade",
-        imgSrc: "/imagesNew/casestudies/dbt.webp",
+        imgSrc: "/imagesNew/casestudies/dbt.png",
         title: "Department for Business & Trade",
         subtitle: "Government"
     }
