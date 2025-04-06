@@ -65,7 +65,7 @@ export default function RootLayout({children}) {
         <Script src="/js/jquery.js" strategy="beforeInteractive"/>
         <Script src="/js/vendors.js" strategy="beforeInteractive"/>
         <Script src="/js/main.js" strategy="afterInteractive"/>
-        <Script async defer
+        <Script strategy="lazyOnload"
                 src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_API_KEY}&callback=initMap`}></Script>
         </body>
         </html>
