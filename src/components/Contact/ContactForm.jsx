@@ -2,15 +2,17 @@
 
 import React from 'react';
 import {useForm, ValidationError} from '@formspree/react';
+import {useGoogleReCaptcha} from "react-google-recaptcha-v3";
 
 export default function ContactForm() {
-    const [state, handleSubmit] = useForm("mzzbzqjz");
+    const {executeRecaptcha} = useGoogleReCaptcha();
+    const [state, handleSubmit] = useForm("mzzbzqjz", {
+        data: {"g-recaptcha-response": executeRecaptcha}
+    });
 
     if (state.succeeded) {
         return <p>Thanks for your message! We&#39;ll be in touch shortly</p>;
     }
-
-    console.log("*****", state);
 
     return (
         <form onSubmit={handleSubmit}>
