@@ -18,7 +18,7 @@ export default function ContactFormAndMap() {
                             className="contact-form-style-03 position-relative bg-base-color z-index-1 p-14 lg-p-10 sm-p-30px box-shadow-double-large overflow-hidden last-paragraph-no-margin">
                             <h2 className="h1 alt-font fw-700 text-dark-gray mb-30px sm-mb-20px fancy-text-style-4 ls-minus-2px">Say{" "}
                                 <span
-                                    data-fancy-text='{ "effect": "rotate", "string": ["hello!", "hallå!", "salve!"] }'></span>
+                                    data-fancy-text='{ "effect": "rotate", "string": ["hello!", "hallå!", "olá!"] }'></span>
                             </h2>
                             <ContactForm/>
                         </div>
