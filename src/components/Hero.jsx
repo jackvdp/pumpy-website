@@ -31,7 +31,7 @@ export default function Hero() {
                         <div className="fs-20 sm-fs-18 text-dark-gray mb-20px w-70 xxl-w-100 lg-w-100 sm-w-90 d-block"
                              data-anime='{ "el": "childs", "translateX": [110, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'
                         >
-                            <span className="d-inline-block opacity-8">Designing and developing bespoke websites and mobile apps tailored to your vision. With an agile and independent approach, acting as a dedicated digital partner to deliver a fast, personalized service at every stage.</span>
+                            <span className="d-inline-block opacity-8">Designing and developing bespoke websites and mobile apps tailored to your vision. With an agile and independent approach, acting as a dedicated digital partner to deliver a fast, personalised service at every stage.</span>
                         </div>
                         <div className="icon-with-text-style-08"
                              data-anime='{ "el": "childs", "translateX": [140, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'

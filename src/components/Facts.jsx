@@ -7,7 +7,7 @@ export default function Facts() {
                         <h2 className="text-dark-gray fw-600 alt-font ls-minus-3px w-95 md-w-100 highlight-separator-small">Combining
                             technical knowledge with user-centric design to deliver websites and apps that <span
                                 className="highlight-separator mb-0 pb-0" data-shadow-animation="true"
-                                data-animation-delay="500"> engage <span><img src="imagesNew/highlight-separator.webp"
+                                data-animation-delay="500"> engage <span><img src="/imagesNew/highlight-separator.webp"
                                                                               alt=""/></span></span> and convert.</h2>
                     </div>
                 </div>
@@ -15,7 +15,7 @@ export default function Facts() {
                     <div className="col-12 col-lg-4 col-md-8 md-mb-50px">
                         <div className="position-sticky top-120px"
                              data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                            <p className="w-75 lg-w-100 mb-40px">Dedicated to providing personalized solutions tailored
+                            <p className="w-75 lg-w-100 mb-40px">Dedicated to providing personalised solutions tailored
                                 to your <span className="text-dark-gray text-decoration-line-bottom fw-600">unique business needs and goals.</span>
                             </p>
                             <a href="/contact" className="btn btn-large btn-dark-gray btn-box-shadow">Let&apos;s talk

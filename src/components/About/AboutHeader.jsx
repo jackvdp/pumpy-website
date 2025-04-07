@@ -9,12 +9,12 @@ export default function AboutHeader() {
                     <h1 className="text-dark-gray fw-600 ls-minus-4px mb-0 alt-font highlight-separator-small">
                                 <span className="highlight-separator mb-0 pb-0" data-shadow-animation="true"
                                       data-animation-delay="500">About<span><img
-                                    src="imagesNew/highlight-separator.webp" alt=""/></span></span> me
+                                    src="/imagesNew/highlight-separator.webp" alt=""/></span></span> me
                     </h1>
                 </div>
                 <div className="col-lg-6">
                     <p className="fs-20 lh-32 text-dark-gray opacity-7 w-90 lg-w-100 md-w-80 mb-0">Delivering
-                        personalized digital solutions, from custom websites and mobile apps to specialized software,
+                        personalised digital solutions, from custom websites and mobile apps to specialized software,
                         uniquely crafted to bring your vision to life.</p>
                 </div>
             </div>
