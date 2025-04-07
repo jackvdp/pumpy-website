@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useContext, useEffect, useState } from 'react';
-import { MusicPlayerContext } from './MusicPlayerProvider';
+import React, {useContext, useEffect, useState} from 'react';
+import {MusicPlayerContext} from './MusicPlayerProvider';
 import styles from './MusicPlayer.module.css';
 import Artwork from './Artwork';
 import Controls from './Controls';
@@ -60,30 +60,6 @@ const MusicPlayer = () => {
             }
         }
     }, [isPlaying]);
-
-    useEffect(() => {
-        const handleKeyDown = (e) => {
-            switch (e.key) {
-                case ' ':
-                    e.preventDefault();
-                    togglePlay();
-                    break;
-                case 'ArrowRight':
-                    nextTrack();
-                    break;
-                case 'ArrowLeft':
-                    prevTrack();
-                    break;
-                default:
-                    break;
-            }
-        };
-
-        window.addEventListener('keydown', handleKeyDown);
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-        };
-    }, [togglePlay, nextTrack, prevTrack]);
 
     return (
         <div className={styles.playerContainer}>
