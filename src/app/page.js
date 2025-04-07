@@ -1,13 +1,13 @@
 "use client"
 
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/home/Hero";
+import Hero from "@/components/Hero";
 import Logos from "@/components/Logos";
-import About from "@/components/home/About";
-import HowItWorks from "@/components/home/Process";
+import About from "@/components/About";
+import HowItWorks from "@/components/Process";
 import CaseStudies from "@/components/CaseStudies";
-import Parallax from "@/components/home/Parallax";
-import Facts from "@/components/home/Facts";
+import Parallax from "@/components/Parallax";
+import Facts from "@/components/Facts";
 import Marquee from "@/components/Marquee";
 import Footer from "@/components/Footer";
 import MainWrapper from "@/components/MainWrapper";
