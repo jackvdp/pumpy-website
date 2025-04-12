@@ -5,7 +5,7 @@ export default function CaseStudy(item) {
         <li key={item.id} className={`grid-item ${item.className} transition-inner-all`} data-atropos
             data-atropos-perspective="1450">
             <div className="position-relative">
-                <a href={item.link} target="_blank" className="portfolio-link"></a>
+                <a href={"/projects/" + item.id} target="_blank" className="portfolio-link"></a>
                 <div className="atropos-scale">
                     <div className="atropos-rotate">
                         <div className="atropos-inner" data-atropos-offset="3">

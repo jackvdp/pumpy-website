@@ -10,7 +10,7 @@ export default function Footer({sticky}) {
                     <div
                         className="col-12 col-xl-3 col-lg-12 col-md-6 d-flex flex-column lg-mb-30px sm-mb-20px order-md-1">
                         <a href="/" className="footer-logo d-inline-block lg-mb-30px">
-                            <img src="imagesNew/logo.webp" alt="" className="default-logo"/>
+                            <img src="/imagesNew/logo.webp" alt="" className="default-logo"/>
                         </a>
                         <div className="elements-social social-text-style-01 mt-auto">
                             <ul className="small-icon dark fw-600">

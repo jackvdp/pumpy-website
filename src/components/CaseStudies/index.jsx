@@ -2,29 +2,31 @@ import caseStudies from "./caseStudies"
 import getSelectors from "./getSelectors"
 import CaseStudy from "./CaseStudy"
 
-export default function CaseStudies() {
+export default function CaseStudies({showTitle = true}) {
     return (
         <section className="pb-0 overflow-hidden position-relative bg-white">
             <div className="container">
                 <div className="row align-items-center mb-5">
-                    <div className="col-xl-5 lg-mb-30px text-center text-xl-start">
-                        <h2 className="alt-font text-dark-gray fw-600 ls-minus-3px mb-0">Case studies</h2>
-                    </div>
-                    <SelectionTabs />
+                    {showTitle && (
+                        <div className="col-xl-5 lg-mb-30px text-center text-xl-start">
+                            <h2 className="alt-font text-dark-gray fw-600 ls-minus-3px mb-0">Case studies</h2>
+                        </div>
+                    )}
+                    <SelectionTabs showTitle={showTitle}/>
                 </div>
-                <Icons />
+                <Icons/>
             </div>
         </section>
     )
 }
 
-function SelectionTabs() {
+function SelectionTabs({showTitle}) {
     return (
-        <div className="col-xl-7 tab-style-04 text-center text-xl-end">
-            <ul className="portfolio-filter nav nav-tabs justify-content-center justify-content-xl-end border-0">
+        <div className={`${showTitle && "col-xl-7 text-xl-end"} tab-style-04 text-center`}>
+            <ul className={`portfolio-filter nav nav-tabs justify-content-center ${showTitle && "justify-content-xl-end"} border-0`}>
                 {
                     getSelectors().map((selector, index) => (
-                        <li key={index} className={`nav ${index == 0 && "active"}`}>
+                        <li key={index} className={`nav ${index === 0 && "active"}`}>
                             <a data-filter={selector.selector} href="#">{selector.tagName}</a>
                         </li>
                     ))

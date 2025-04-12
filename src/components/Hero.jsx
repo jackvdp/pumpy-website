@@ -36,7 +36,7 @@ export default function Hero() {
                         <div className="icon-with-text-style-08"
                              data-anime='{ "el": "childs", "translateX": [140, 0], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'
                         >
-                            <a href="/casestudies" target="blank"
+                            <a href="/projects" target="blank"
                                className="d-inline-block fs-20 ls-minus-05px alt-font fw-600 text-dark-gray text-dark-gray-hover">
                                 <div className="feature-box-icon-hover feature-box feature-box-left-icon-middle">
                                     <div

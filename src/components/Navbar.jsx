@@ -14,7 +14,7 @@ export default function Navbar() {
     const navItems = [
         {href: "/about", text: "About"},
         {href: "/services", text: "Services"},
-        {href: "/casestudies", text: "Case Studies"},
+        {href: "/projects", text: "Case Studies"},
         {href: "/music", text: "Music"},
         {href: "/contact", text: "Contact"}
     ];
@@ -27,9 +27,9 @@ export default function Navbar() {
                 <div className="container-fluid">
                     <div className="col-auto">
                         <a className="navbar-brand" href="/">
-                            <img src="imagesNew/logo.webp" alt="" className="default-logo"/>
-                            <img src="imagesNew/logo.webp" alt="" className="alt-logo"/>
-                            <img src="imagesNew/logo.webp" alt="" className="mobile-logo"/>
+                            <img src="/imagesNew/logo.webp" alt="" className="default-logo"/>
+                            <img src="/imagesNew/logo.webp" alt="" className="alt-logo"/>
+                            <img src="/imagesNew/logo.webp" alt="" className="mobile-logo"/>
                         </a>
                     </div>
                     <div className="col-auto menu-order">
