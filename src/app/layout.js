@@ -51,9 +51,9 @@ export default function RootLayout({children}) {
             <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
             <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="true"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-            <link rel="preload"
+            <link
                   href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
-                  as="style"/>
+                  rel="stylesheet"/>
         </head>
         <body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#2d2c2b" className="custom-cursor">
         <MusicPlayerProvider>
@@ -63,10 +63,12 @@ export default function RootLayout({children}) {
             <MusicPlayer/>
         </MusicPlayerProvider>
         <Script src="/js/jquery.js" strategy="beforeInteractive"/>
-        <Script src="/js/vendors.js" strategy="beforeInteractive"/>
-        <Script src="/js/main.js" strategy="afterInteractive"/>
-        <Script strategy="lazyOnload"
-                src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_API_KEY}&callback=initMap`}></Script>
+        <Script src="/js/vendors.js" strategy="afterInteractive"/>
+        <Script src="/js/main.js" strategy="lazyOnload"/>
+        <Script 
+            strategy="lazyOnload"
+            src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_API_KEY}&callback=initMap&loading=async`}
+        />
         </body>
         </html>
     );
