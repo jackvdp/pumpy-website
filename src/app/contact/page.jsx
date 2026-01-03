@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Marquee from "@/components/Marquee";
 import Footer from "@/components/Footer";
 import ContactFormAndMap from "@/components/Contact/ContactFormAndMap";
+import Script from "next/script";
 
 function ContactHeader() {
     return (
@@ -61,6 +62,12 @@ export default function ContactPage() {
                 <Marquee/>
             </MainWrapper>
             <Footer/>
+            
+            {/* Google Maps - only loaded on contact page where it's actually used */}
+            <Script
+                strategy="lazyOnload"
+                src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_API_KEY}&callback=initMap&loading=async`}
+            />
         </>
     )
 }
