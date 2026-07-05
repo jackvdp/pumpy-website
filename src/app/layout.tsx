@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
-import { MusicPlayer } from "@/components/site/music-player";
+import { LazyMusicPlayer } from "@/components/site/lazy-music-player";
 import { ScrollIndicator } from "@/components/site/scroll-indicator";
 import "./globals.css";
 
@@ -46,7 +46,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col overflow-x-clip">
         {children}
-        <MusicPlayer />
+        <LazyMusicPlayer />
         <ScrollIndicator />
       </body>
     </html>
