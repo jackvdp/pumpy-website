@@ -1,0 +1,36 @@
+{
+  "name": "pumpy-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@formspree/react": "^2.5.5",
+    "next": "^14.2.15",
+    "puppeteer": "^23.5.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-player": "^2.16.0",
+    "swiper": "^11.1.14"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.25.7",
+    "@babel/preset-react": "^7.25.7",
+    "@types/node": "22.7.5",
+    "@types/react": "18.3.11",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.8",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^4.6.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  }
+}
