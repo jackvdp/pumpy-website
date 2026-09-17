@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 
 const quickLinks = [
@@ -53,6 +54,14 @@ export function Footer() {
                   </a>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/kart"
+                  className="text-ink/80 transition-colors hover:text-ink"
+                >
+                  Play Block Kart
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 
 const MusicPlayer = dynamic(
   () => import("./music-player").then((mod) => mod.MusicPlayer),
@@ -13,6 +14,9 @@ export function LazyMusicPlayer() {
   // playlist data) stays off the critical path — the SoundCloud widget is
   // still ready well before anyone can reach the play button
   const [ready, setReady] = useState(false);
+  const pathname = usePathname();
+  // the kart game owns the whole screen (and its own audio)
+  const hidden = pathname.startsWith("/kart");
 
   useEffect(() => {
     if ("requestIdleCallback" in window) {
@@ -23,5 +27,5 @@ export function LazyMusicPlayer() {
     return () => clearTimeout(timer);
   }, []);
 
-  return ready ? <MusicPlayer /> : null;
+  return ready && !hidden ? <MusicPlayer /> : null;
 }
