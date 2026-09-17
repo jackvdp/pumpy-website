@@ -180,6 +180,10 @@
   background-size: 5px 5px;
 }
 
+@utility font-pixel {
+  font-family: var(--font-pixel), ui-monospace, monospace;
+}
+
 @utility text-outline {
   color: transparent;
   -webkit-text-stroke: 2px var(--blush);

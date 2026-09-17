@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
-import { Menu, X } from "lucide-react";
+import { Gamepad2, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -61,6 +61,14 @@ export function Navbar() {
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-flame transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
+          <Link
+            href="/kart"
+            className="group relative flex items-center gap-1.5 text-sm font-medium text-ink/70 transition-colors hover:text-ink"
+          >
+            <Gamepad2 className="size-4" />
+            Play
+            <span className="absolute -bottom-1 left-0 h-px w-0 bg-flame transition-all duration-300 group-hover:w-full" />
+          </Link>
           <Button
             render={<a href="mailto:jack@vanderpump.tech" />}
             nativeButton={false}
@@ -100,6 +108,14 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
+              <Link
+                href="/kart"
+                onClick={() => setOpen(false)}
+                className="flex items-center gap-2 rounded-md px-2 py-2.5 text-base font-medium text-ink/80 hover:bg-baby/40 hover:text-ink"
+              >
+                <Gamepad2 className="size-4" />
+                Play Block Kart
+              </Link>
               <Button
                 render={<a href="mailto:jack@vanderpump.tech" />}
                 nativeButton={false}
